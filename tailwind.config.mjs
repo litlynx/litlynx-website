@@ -11,7 +11,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        grotesk: ["Grotesk", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
       },
       fontWeight: {
         regular: 400,
@@ -26,5 +26,6 @@ export default {
       },
     },
   },
+  safelist: ["font-inter"],
   plugins: [],
 };

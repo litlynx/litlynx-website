@@ -1,5 +1,4 @@
 ---
-import Form from "../ui/Form.astro";
 import SectionTitle from "../ui/SectionTitle.astro";
 import Section from "./Section.astro";
 ---
@@ -7,9 +6,23 @@ import Section from "./Section.astro";
 <Section id="contact">
   <div class="mb-[140px] relative">
     <SectionTitle
-      sectionTitle="Contact Us"
-      description="Connect with Us: Let's Discuss Your Digital Marketing Needs"
+      sectionTitle="Book a Call"
+      description="Ready to elevate your company's digital footprint? Schedule a free strategy call with our experts today."
     />
-    <Form />
+
+    <div class="flex flex-col sm:flex-row gap-4 mb-8 items-center justify-center">
+      <a
+        href="https://cal.com/litlynx/30min"
+        target="_blank"
+        rel="noopener"
+        class="px-6 py-3 bg-cyan-400 text-white rounded-lg font-semibold hover:bg-yellow-400 transition w-full sm:w-auto text-center"
+        >Schedule a Call</a
+      >
+      <a
+        href="mailto:hello@litlynx.com"
+        class="px-6 py-3 bg-gray-200 text-gray-900 rounded-lg font-semibold hover:bg-gray-300 transition"
+        >Send Email</a
+      >
+    </div>
   </div>
 </Section>

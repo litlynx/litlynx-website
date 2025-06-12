@@ -29,15 +29,49 @@
     --white: #ffffff;
   }
 
-  /* @layer base {
-    * {
-      box-sizing: border-box;
-      font-family: "Inter", sans-serif;
-      scroll-behavior: smooth;
-    }
+  * {
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    scroll-behavior: smooth;
+  }
 
+  body {
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+    line-height: 120%;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+  }
+
+  h4 {
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+  }
+
+  @media (max-width: 640px) {
     body {
-      font-size: 20px;
+      font-size: 16px;
     }
 
     p {
@@ -45,52 +79,21 @@
     }
 
     h1 {
-      font-size: 3rem;
-      line-height: 120%;
-      font-weight: 500;
+      font-size: 2.688rem;
     }
 
     h2 {
-      font-size: 2rem;
-      font-weight: 500;
+      font-size: 2.25rem;
     }
 
     h3 {
-      font-size: 1.5rem;
-      font-weight: 500;
+      font-size: 1.625rem;
     }
 
     h4 {
-      font-size: 1rem;
-      font-weight: 500;
+      font-size: 1.125rem;
     }
-
-    @media (max-width: 640px) {
-      body {
-        font-size: 16px;
-      }
-
-      p {
-        font-size: 1rem;
-      }
-
-      h1 {
-        font-size: 2.688rem;
-      }
-
-      h2 {
-        font-size: 2.25rem;
-      }
-
-      h3 {
-        font-size: 1.625rem;
-      }
-
-      h4 {
-        font-size: 1.125rem;
-      }
-    }
-  } */
+  }
 
   @layer components {
     .btn-primary {
@@ -114,8 +117,12 @@
       @apply bg-white text-black transform scale-105;
     }
 
-    .greenhead {
-      @apply bg-green text-black rounded-[7px] px-[7px];
+    .bluehead {
+      @apply bg-blue-500 text-white rounded-[7px] px-[7px];
+    }
+
+    .orangehead {
+      @apply bg-orange-500 text-white rounded-[7px] px-[7px];
     }
 
     .whitehead {
