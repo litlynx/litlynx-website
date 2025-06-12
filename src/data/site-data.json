@@ -1,0 +1,9 @@
+{
+  "title": "Litlynx Website",
+  "url": "https://litlynx.com",
+  "description": "Litlynx Website is built with a modern, fast, and secure website template built with Astro.",
+  "image": {
+    "src": "",
+    "alt": "Litlynx Logo"
+  }
+}
