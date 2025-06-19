@@ -7,7 +7,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://litlynx.com",
+  site: "https://www.litlynx.com",
   integrations: [tailwind(), vue(), sitemap()],
   output: "static",
   build: {
