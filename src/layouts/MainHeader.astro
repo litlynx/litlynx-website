@@ -1,5 +1,6 @@
 ---
 import Seo from "../components/seo/Seo.astro";
+import Gtm from "../components/google-tag-manager/Gtm.astro";
 
 // Pass the contents to create SEO for the page
 const { title, description, image, robots } = Astro.props;
@@ -29,5 +30,6 @@ const { title, description, image, robots } = Astro.props;
     {robots}
   />
 
+  <Gtm />
   <!-- Preconnect fonts, images... -->
 </head>
