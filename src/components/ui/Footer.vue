@@ -24,8 +24,8 @@ const currentYear = computed(() => new Date().getFullYear());
 </script>
 
 <template>
-  <section class="sm:px-5">
-    <div class="w-full max-w-[1240px] mx-auto">
+  <section class="px-5">
+    <div class="w-full max-w-[600px] mx-auto">
       <div class="px-[15px] bg-dark text-gray py-[55px] lg:px-[60px] sm:rounded-t-[15px]">
         <div>
           <div class="flex flex-col lg:flex-row gap-7 items-center justify-between">
