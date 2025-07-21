@@ -13,7 +13,7 @@
     "@astrojs/sitemap": "^3.4.1",
     "@astrojs/tailwind": "^6.0.2",
     "@astrojs/vue": "^5.1.0",
-    "astro": "^5.9.2",
+    "astro": "^5.12.0",
     "astro-navbar": "^2.3.7",
     "lenis": "^1.0.45",
     "sharp": "^0.34.2",

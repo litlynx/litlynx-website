@@ -1,0 +1,562 @@
+{
+  "basics": {
+    "name": "Jorge Miranda",
+    "label": "Front-End Engineer | Sr Software Engineer | TS JS Node 🌎",
+    "picture": "",
+    "email": "",
+    "website": "https://github.com/jotaesteves",
+    "summary": "Senior Front-End Engineer with 10+ years of expertise in building scalable, high-performance web applications using modern JavaScript frameworks (Vue.js, React.js, Nuxt.js, Next.js). Proven track record of leading teams and delivering complex e-commerce platforms, SaaS solutions, and enterprise applications. Expert in TypeScript, Node.js, and comprehensive testing strategies including Playwright, Jest, and Cypress. Strong foundation in UX/UI design with experience in design systems, accessibility, and performance optimization. Adept at mentoring developers and establishing technical standards in agile environments.",
+    "location": {
+      "address": "",
+      "postalCode": "4905-035",
+      "city": "Porto",
+      "countryCode": "pt-PT",
+      "region": "Minho"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "jorge-miranda-dev",
+        "url": "https://linkedin.com/in/jorge-miranda-dev"
+      },
+      {
+        "network": "GitHub",
+        "username": "jotaesteves",
+        "url": "https://github.com/jotaesteves"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "SIROC",
+      "position": "Software Engineer",
+      "website": "",
+      "startDate": "2025-01-01",
+      "summary": "Developed innovative audio software solutions using cutting-edge React and TypeScript technologies",
+      "highlights": [
+        "Architected and developed a modern DAW (Digital Audio Workstation) application from scratch using React and TypeScript",
+        "Implemented real-time audio processing interfaces with complex state management and performance optimization",
+        "Collaborated closely with UX/UI designers to deliver pixel-perfect, user-centric audio editing interfaces",
+        "Built reusable React component library with comprehensive TypeScript interfaces for audio controls",
+        "Established scalable front-end architecture patterns and coding standards for the development team",
+        "Delivered high-quality features in fast-paced agile environment with continuous integration practices"
+      ],
+      "endDate": "2025-03-01"
+    },
+    {
+      "company": "epitome GmbH",
+      "position": "Lead Front-End Engineer",
+      "website": "",
+      "startDate": "2024-06-01",
+      "summary": "Led front-end development initiatives and architected enterprise-scale e-commerce solutions with focus on performance and scalability",
+      "highlights": [
+        "Led cross-functional team of 4+ developers in delivering high-traffic e-commerce platform serving 100K+ monthly users",
+        "Architected and implemented scalable React.js component system with Next.js, improving development velocity by 40%",
+        "Mentored junior developers and established comprehensive coding standards, reducing code review time by 50%",
+        "Successfully migrated complex Next.js application to proprietary framework while maintaining 99.9% uptime",
+        "Implemented advanced analytics tracking with Google Tag Manager and GA4, providing actionable insights for business decisions",
+        "Optimized application performance achieving 95+ Lighthouse scores across all metrics"
+      ],
+      "endDate": "2024-12-01"
+    },
+    {
+      "company": "epitome GmbH",
+      "position": "Front-End Engineer",
+      "website": "",
+      "startDate": "2023-09-01",
+      "summary": "Developed enterprise e-commerce platform from ground up using modern React ecosystem and advanced design system implementation",
+      "highlights": [
+        "Built greenfield e-commerce platform from scratch using Next.js and React.js, handling 50K+ daily transactions",
+        "Implemented Amazon Style Dictionary for comprehensive design token management, ensuring 100% design consistency",
+        "Developed responsive and WCAG 2.1 AA compliant user interfaces, improving accessibility score by 85%",
+        "Collaborated with UX/UI design team to deliver pixel-perfect implementations using Figma-to-code workflows",
+        "Established modular component architecture reducing development time for new features by 60%"
+      ],
+      "endDate": "2024-06-01"
+    },
+    {
+      "company": "Human Navigator Groep",
+      "position": "Front-End Engineer",
+      "website": "",
+      "startDate": "2023-06-01",
+      "summary": "Enhanced HR SaaS platform functionality through strategic refactoring and modern Vue.js implementation",
+      "highlights": [
+        "Successfully refactored legacy codebase improving application performance by 45% and reducing technical debt",
+        "Implemented new features using Vue.js 3 Composition API and TypeScript, enhancing type safety and maintainability",
+        "Collaborated with cross-functional teams to enhance user experience, resulting in 30% improvement in user satisfaction metrics",
+        "Established comprehensive code review processes and quality standards, reducing production bugs by 60%",
+        "Led Vue 2 to Vue 3 migration strategy, modernizing the application architecture and improving development experience"
+      ],
+      "endDate": "2023-08-01"
+    },
+    {
+      "company": "Proxify",
+      "position": "Front-End Developer",
+      "website": "",
+      "startDate": "2022-10-01",
+      "summary": "Delivered front-end solutions for Technology-as-a-Service platform with focus on scalability and performance",
+      "highlights": [
+        "Developed responsive web applications using modern JavaScript frameworks and best practices",
+        "Collaborated with distributed teams to deliver high-quality software solutions on tight deadlines",
+        "Implemented efficient front-end architectures optimized for performance and maintainability",
+        "Contributed to code reviews and technical documentation to ensure consistent development standards"
+      ],
+      "endDate": "2023-06-01"
+    },
+    {
+      "company": "Zentered",
+      "position": "Front-End Developer",
+      "website": "",
+      "startDate": "2021-12-01",
+      "summary": "Developed comprehensive e-commerce back-office management systems with focus on operational efficiency",
+      "highlights": [
+        "Built intuitive back-office interfaces for e-commerce platform management and inventory control",
+        "Implemented data visualization dashboards providing real-time insights for business operations",
+        "Developed responsive admin panels with complex form handling and validation systems",
+        "Optimized user workflows reducing administrative task completion time by 35%"
+      ],
+      "endDate": "2022-06-01"
+    },
+    {
+      "company": "Helloprint",
+      "position": "Front-End / QA Developer",
+      "website": "",
+      "startDate": "2021-03-01",
+      "summary": "Full-stack e-commerce development with focus on testing and quality assurance using modern frameworks",
+      "highlights": [
+        "Developed high-performance e-commerce solutions using Vue.js, Nuxt.js, and JavaScript serving 200K+ customers",
+        "Implemented comprehensive testing strategies with Playwright and Percy, achieving 95% test coverage and reducing production bugs by 70%",
+        "Built seamless PHP/Prestashop integrations with Contentful CMS, enabling dynamic content management for marketing teams",
+        "Established automated QA processes and CI/CD pipelines, reducing deployment time from 2 hours to 15 minutes",
+        "Crafted responsive designs using SASS and modern CSS frameworks, ensuring cross-browser compatibility and mobile optimization"
+      ],
+      "endDate": "2021-12-01"
+    },
+    {
+      "company": "Celfocus",
+      "position": "Front-End Developer",
+      "website": "",
+      "startDate": "2020-10-01",
+      "summary": "Delivered enterprise web solutions using Adobe Experience Manager and modern JavaScript frameworks in agile and waterfall environments",
+      "highlights": [
+        "Developed content-rich websites using Adobe Experience Manager (AEM) with Vue.js integration for dynamic user experiences",
+        "Built complex front-office applications using ExtJS framework with SQL database integration",
+        "Collaborated in both Scrum-Agile and Waterfall methodologies, adapting development approach to project requirements",
+        "Implemented responsive designs and modern HTML5/CSS3 standards ensuring cross-platform compatibility"
+      ],
+      "endDate": "2021-03-01"
+    },
+    {
+      "company": "Leroy Merlin",
+      "position": "Front-End Engineer",
+      "website": "",
+      "startDate": "2018-12-01",
+      "summary": "Developed enterprise store distribution platform using Vue.js ecosystem with focus on scalability and performance optimization",
+      "highlights": [
+        "Built comprehensive store distribution platform using Vue.js and Webpack, serving 500+ retail locations",
+        "Implemented full-stack features with Node.js backend integration and RESTful API consumption",
+        "Developed responsive interfaces optimized for both desktop and mobile store management workflows",
+        "Collaborated in Scrum-Agile environment using Git, Jira, and GitLab for efficient project delivery",
+        "Optimized application bundle size and performance, achieving 40% faster load times across all modules"
+      ],
+      "endDate": "2020-10-01"
+    },
+    {
+      "company": "FREELANCE MEDIA PRODUCTIONS",
+      "position": "Graphic Designer",
+      "website": "",
+      "startDate": "2015-01-01",
+      "summary": "Provided comprehensive graphic design and branding solutions for diverse clientele across multiple industries",
+      "highlights": [
+        "Created visual identity and branding materials for 50+ clients across various industries",
+        "Designed marketing collateral including logos, brochures, and digital assets with strong brand consistency",
+        "Collaborated with clients to translate business requirements into compelling visual communications",
+        "Delivered projects on time and within budget while maintaining high design quality standards"
+      ],
+      "endDate": "2018-01-01"
+    },
+    {
+      "company": "Jorge Esteves",
+      "position": "Front-End Developer / Designer",
+      "website": "",
+      "startDate": "2011-01-01",
+      "summary": "Provided full-stack web development and design services combining technical expertise with creative vision",
+      "highlights": [
+        "Developed custom websites and web applications for 100+ clients using HTML5, CSS3, JavaScript, and modern frameworks",
+        "Created comprehensive design systems and user interfaces optimized for conversion and user experience",
+        "Implemented responsive designs ensuring cross-device compatibility and accessibility standards",
+        "Managed complete project lifecycle from initial concept to deployment and maintenance",
+        "Built long-term client relationships through consistent delivery of high-quality solutions"
+      ],
+      "endDate": "2022-01-01"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidade de Coimbra",
+      "area": "Design and Multimedia",
+      "studyType": "Bachelor's Degree",
+      "startDate": "2013-01-01",
+      "gpa": "",
+      "courses": [
+        "Web Design",
+        "Interactive Media",
+        "User Interface Design",
+        "Digital Communication",
+        "Typography",
+        "Multimedia Production"
+      ],
+      "endDate": "2017-01-01"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Amazon Web Services (AWS)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Google Search Console",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "salesforce",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Next.js",
+      "level": "Intermediate",
+      "keywords": ["React Framework", "Server-side Rendering", "Static Generation"]
+    },
+    {
+      "name": "React.js",
+      "level": "Advanced",
+      "keywords": ["Hooks", "Component Lifecycle", "State Management", "JSX"]
+    },
+    {
+      "name": "vitest",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Sonarcube",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Gitlab",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Amazon Style Dictionary",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Google Analytics",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Google Tag Manager",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Yarn",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "BigCommerce",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "StencilJS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Figma",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "YAML",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Software as a Service (SaaS)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "vite",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Webpack",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "GraphQL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Software Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "GitHub",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "PlaywrightJs",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Mixpanel",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Analytics",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Tailwind CSS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Nuxt.js",
+      "level": "Advanced",
+      "keywords": ["SSR", "SSG", "Vue.js Framework", "Universal Applications"]
+    },
+    {
+      "name": "Jest",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Cypress",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "TypeScript",
+      "level": "Advanced",
+      "keywords": ["Type Safety", "Interface Design", "Generic Programming", "Modern JavaScript"]
+    },
+    {
+      "name": "Node.js",
+      "level": "Advanced",
+      "keywords": ["Backend Development", "API Development", "NPM", "Express.js"]
+    },
+    {
+      "name": "HTML5",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Cascading Style Sheets (CSS)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "windi css",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Front-end Development",
+      "level": "Expert",
+      "keywords": ["Responsive Design", "User Experience", "Performance Optimization", "Accessibility"]
+    },
+    {
+      "name": "Vue.js",
+      "level": "Expert",
+      "keywords": ["Frontend Framework", "Single Page Applications", "Component-based Architecture", "State Management"]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Expert",
+      "keywords": ["ES6+", "Async Programming", "DOM Manipulation", "Functional Programming"]
+    },
+    {
+      "name": "UX / UI Design",
+      "level": "Advanced",
+      "keywords": ["User Research", "Prototyping", "Design Systems", "Figma"]
+    },
+    {
+      "name": "User Experience (UX)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "User Interface Design",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Graphic Design",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Branding",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Web Design",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Art Direction",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Typography",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Music Composition",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "agile",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Affinity Designer",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "HTML5 + CSS3",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "SASS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "LESS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "jQuery",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Git",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "node.js",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "JSON",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "REST API",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Adobe Photoshop",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Adobe Illustrator",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Adobe InDesign",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Adobe AfterEffects",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Affinity Photo",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "affinity publisher",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Adobe Experience Manager (AEM)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Teamwork",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "English",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "French",
+      "level": "",
+      "keywords": []
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Professional working proficiency"
+    },
+    {
+      "language": "Portuguese",
+      "fluency": "Native or bilingual proficiency"
+    },
+    {
+      "language": "French",
+      "fluency": null
+    },
+    {
+      "language": "Spanish",
+      "fluency": null
+    }
+  ]
+}

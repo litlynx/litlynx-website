@@ -2,8 +2,10 @@
 
 import MainLayout from '../layouts/MainLayout.astro';
 import Hero from '../components/sections/Hero.astro';
-import Contact from '../components/sections/Contact.astro';
+// import Contact from '../components/sections/Contact.astro';
 import Footer from '../components/ui/Footer.astro';
+import Stats from '../components/sections/Stats.vue';
+import Services from '../components/sections/Services.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -14,6 +16,7 @@ import Footer from '../components/ui/Footer.astro';
   description="Litlynx is your trusted partner for modern frontend web development. We help companies design, build, and optimize powerful software solutions — with clean code, future-ready tech, and long-term support. Ready to launch, grow, or transform? Let’s build something brilliant together."
 >
 	<Hero />
-	<Contact />
+  <Stats />
+  <Services />
   <Footer />
 </MainLayout>

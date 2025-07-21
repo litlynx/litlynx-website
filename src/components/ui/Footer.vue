@@ -5,15 +5,22 @@ const props = defineProps({
   logoSrc: String,
   linkedinSrc: String,
   githubSrc: String,
+  xoloHireSrc: String,
 });
 
 const LogoSrc = props.logoSrc;
 const linkedinSrc = props.linkedinSrc;
 const githubSrc = props.githubSrc;
+const xoloHireSrc = props.xoloHireSrc;
 
 const socialLogos = computed(() => [
   { name: "Linkedin", src: linkedinSrc, link: "https://linkedin.com/in/jorge-miranda-dev" },
   { name: "Github", src: githubSrc, link: "https://github.com/litlynx" },
+  {
+    name: "Xolo Hire",
+    src: xoloHireSrc,
+    link: "https://app.xolo.io/profile/jorgemiranda",
+  },
 ]);
 
 const contactInfo = ref({
@@ -24,7 +31,7 @@ const currentYear = computed(() => new Date().getFullYear());
 </script>
 
 <template>
-  <section class="px-5">
+  <section class="px-5 pt-8">
     <div class="w-full max-w-[600px] mx-auto">
       <div class="px-[15px] bg-dark text-gray py-[55px] lg:px-[60px] sm:rounded-t-[15px]">
         <div>

@@ -1,42 +1,78 @@
-# Astro Starter Kit: Basics
+# LitLynx Website
 
-```sh
-pnpm create astro@latest -- --template basics
-```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+This is the official website for LitLynx, built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/).
 
 ## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
+```
+├── public/           # Static assets (images, icons, etc.)
 ├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+│   ├── assets/       # Project images and SVGs
+│   ├── components/   # Astro & Vue components
+│   ├── data/         # JSON data files
+│   ├── layouts/      # Layout components
+│   ├── pages/        # Site pages (Astro)
+│   ├── styles/       # Global styles (Tailwind)
+│   └── utils/        # Utility scripts
+├── astro.config.mjs  # Astro configuration
+├── tailwind.config.mjs
+├── tsconfig.json
+├── package.json
+└── README.md
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 🧑‍� Getting Started
+
+Install dependencies:
+
+```sh
+pnpm install
+```
+
+Start the development server:
+
+```sh
+pnpm dev
+```
+
+Build for production:
+
+```sh
+pnpm build
+```
+
+Preview the production build:
+
+```sh
+pnpm preview
+```
+
+## 📦 Scripts
+
+| Command        | Description                |
+| -------------- | -------------------------- |
+| `pnpm install` | Install dependencies       |
+| `pnpm dev`     | Start local dev server     |
+| `pnpm build`   | Build your production site |
+| `pnpm preview` | Preview your build locally |
+| `pnpm astro`   | Run Astro CLI commands     |
+
+## 🌐 Learn More
+
+- [Astro Documentation](https://docs.astro.build)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+
+---
+
+© 2025 LitLynx. All rights reserved.
 
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
+| Command                | Action                                           |
+| :--------------------- | :----------------------------------------------- |
+| `pnpm install`         | Installs dependencies                            |
 | `pnpm dev`             | Starts local dev server at `localhost:4321`      |
 | `pnpm build`           | Build your production site to `./dist/`          |
 | `pnpm preview`         | Preview your build locally, before deploying     |
