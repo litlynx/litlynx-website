@@ -89,7 +89,7 @@ test.describe("Accessibility & SEO", () => {
     try {
       const linkedinLink = page.locator('a[href*="linkedin.com"]');
       const linkedinCount = await linkedinLink.count();
-      
+
       if (linkedinCount > 0) {
         await linkedinLink.first().focus();
         await expect(linkedinLink.first()).toBeFocused();
@@ -97,7 +97,7 @@ test.describe("Accessibility & SEO", () => {
         await page.keyboard.press("Tab");
         const githubLink = page.locator('a[href*="github.com"]');
         const githubCount = await githubLink.count();
-        
+
         if (githubCount > 0) {
           await expect(githubLink.first()).toBeFocused();
         }
@@ -105,7 +105,7 @@ test.describe("Accessibility & SEO", () => {
         await page.keyboard.press("Tab");
         const xoloLink = page.locator('a[href*="xolo.io"]');
         const xoloCount = await xoloLink.count();
-        
+
         if (xoloCount > 0) {
           await expect(xoloLink.first()).toBeFocused();
         }

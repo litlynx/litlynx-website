@@ -3,33 +3,55 @@ import Seo from "../components/seo/Seo.astro";
 import Gtm from "../components/google-tag-manager/Gtm.astro";
 
 // Pass the contents to create SEO for the page
-const { title, description, image, robots } = Astro.props;
+const { title, description, image, robots, keywords, author, type, publishedTime, modifiedTime } = Astro.props;
 ---
 
 <head>
   <meta charset="utf-8" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
+  <link rel="manifest" href="/site.webmanifest" />
 
-  <!-- iOS
-  <link rel="apple-touch-icon" sizes="256x256" href="/path/to/your/icon.png" />
-  -->
-  <meta name="viewport" content="width=device-width" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="generator" content={Astro.generator} />
-
+  
+  <!-- DNS Prefetch for performance -->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+  <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+  
+  <!-- Preconnect to external domains -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
   <title>{title}</title>
   <meta name="description" content={description} />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  
+  <!-- Google Fonts with display=swap for performance -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
 
+  <!-- Enhanced SEO Component -->
   <Seo
     {title}
     {description}
     url={Astro.url.toString()}
     {image}
     {robots}
+    {keywords}
+    {author}
+    {type}
+    {publishedTime}
+    {modifiedTime}
   />
 
   <Gtm />
-  <!-- Preconnect fonts, images... -->
+  
+  <!-- Security Headers -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="DENY" />
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
 </head>

@@ -14,7 +14,7 @@ export class TestHelpers {
   async navigateToHomepage() {
     await this.page.goto("/");
     await this.page.waitForLoadState("domcontentloaded");
-    
+
     // Wait for the main heading with timeout
     try {
       await expect(this.page.locator("h1")).toBeVisible({ timeout: 10000 });
@@ -28,7 +28,7 @@ export class TestHelpers {
    */
   async expectSectionToBeVisible(sectionText: string) {
     const section = this.page.locator("section").filter({ hasText: sectionText });
-    
+
     try {
       await expect(section).toBeVisible({ timeout: 10000 });
     } catch (error) {
@@ -110,9 +110,9 @@ export class TestHelpers {
   async testSectionCards(cardSelector: string, expectedMinCount = 1) {
     const cards = this.page.locator(cardSelector);
     const cardCount = await cards.count();
-    
+
     expect(cardCount).toBeGreaterThanOrEqual(expectedMinCount);
-    
+
     // Test hover on first few cards (with error handling)
     const cardsToTest = Math.min(cardCount, 3);
     for (let i = 0; i < cardsToTest; i++) {
@@ -125,7 +125,8 @@ export class TestHelpers {
         console.log(`Warning: Could not interact with card ${i + 1}, continuing...`);
       }
     }
-  }  /**
+  }
+  /**
    * Check page performance metrics
    */
   async checkPagePerformance(maxLoadTime = 5000) {

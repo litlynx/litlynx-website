@@ -1,5 +1,4 @@
 ---
-
 import MainLayout from '../layouts/MainLayout.astro';
 import Hero from '../components/sections/Hero.astro';
 // import Contact from '../components/sections/Contact.astro';
@@ -7,13 +6,38 @@ import Footer from '../components/ui/Footer.astro';
 import Stats from '../components/sections/Stats.vue';
 import Services from '../components/sections/Services.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+// SEO optimized metadata
+const seoTitle = "Litlynx - Modern Frontend Web Development & Digital Solutions";
+const seoDescription = "Transform your business with cutting-edge frontend development. Litlynx delivers modern, fast, and scalable web applications using React, Vue, Astro, and the latest technologies. Get clean code, future-ready solutions, and expert support.";
+const seoKeywords = [
+  "frontend development",
+  "web development company",
+  "React development services",
+  "Vue.js development",
+  "Astro development",
+  "modern web applications",
+  "responsive web design",
+  "performance optimization",
+  "UI/UX design services",
+  "JavaScript development",
+  "TypeScript development",
+  "custom software solutions",
+  "web application development",
+  "digital transformation",
+  "frontend consulting"
+];
+const seoImage = {
+  src: "https://www.litlynx.com/litlynx-og-image.jpg",
+  alt: "Litlynx - Professional Frontend Web Development Services"
+};
 ---
 
 <MainLayout
-  title="Litlynx"
-  description="Litlynx is your trusted partner for modern frontend web development. We help companies design, build, and optimize powerful software solutions — with clean code, future-ready tech, and long-term support. Ready to launch, grow, or transform? Let’s build something brilliant together."
+  title={seoTitle}
+  description={seoDescription}
+  keywords={seoKeywords}
+  type="website"
+  image={seoImage}
 >
 	<Hero />
   <Stats />

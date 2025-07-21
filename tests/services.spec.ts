@@ -28,13 +28,13 @@ test.describe("Services Section", () => {
     // Check service cards have proper styling and hover effects
     const serviceCards = page.locator(".bg-white.rounded-xl.p-6.shadow-lg");
     const cardCount = await serviceCards.count();
-    
+
     // Verify we have at least one service card
     expect(cardCount).toBeGreaterThan(0);
-    
+
     if (cardCount > 0) {
       await expect(serviceCards.first()).toBeVisible();
-      
+
       // Test hover effect on first service card
       await serviceCards.first().hover();
     }

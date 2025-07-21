@@ -14,7 +14,7 @@ test.describe("Responsive Design", () => {
 
     // Check that hero content is visible
     await expect(page.locator("h1")).toBeVisible({ timeout: 5000 });
-    
+
     // Check for hero image with more flexible selector
     const heroImages = page.locator('img[alt*="Hero"], img[alt*="Ilustration"]');
     const imageCount = await heroImages.count();

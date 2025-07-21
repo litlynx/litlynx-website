@@ -1,9 +1,43 @@
 {
-  "title": "Litlynx Website",
-  "url": "https://litlynx.com",
-  "description": "Litlynx Website is built with a modern, fast, and secure website template built with Astro.",
+  "title": "Litlynx - Modern Frontend Web Development & Digital Solutions",
+  "url": "https://www.litlynx.com",
+  "description": "Transform your business with cutting-edge frontend development. Litlynx delivers modern, fast, and scalable web applications using React, Vue, Astro, and the latest technologies. Get clean code, future-ready solutions, and expert support.",
   "image": {
-    "src": "",
-    "alt": "Litlynx Logo"
+    "src": "https://www.litlynx.com/litlynx-og-image.jpg",
+    "alt": "Litlynx - Frontend Web Development Company"
+  },
+  "keywords": [
+    "frontend development",
+    "web development",
+    "React development",
+    "Vue.js development",
+    "Astro development",
+    "modern web applications",
+    "responsive design",
+    "performance optimization",
+    "UI/UX design",
+    "JavaScript development",
+    "TypeScript development",
+    "custom software solutions"
+  ],
+  "author": "Litlynx",
+  "company": {
+    "name": "Litlynx",
+    "description": "Modern frontend web development company specializing in React, Vue, Astro, and cutting-edge web technologies.",
+    "founded": "2023-06-01",
+    "location": "Global",
+    "services": [
+      "Frontend Development",
+      "UI/UX Design",
+      "Performance Optimization",
+      "Custom Software Solutions",
+      "Web Application Development",
+      "Responsive Design"
+    ]
+  },
+  "social": {
+    "linkedin": "https://linkedin.com/in/jorge-miranda-dev",
+    "github": "https://github.com/litlynx",
+    "xolo": "https://app.xolo.io/profile/jorgemiranda"
   }
 }

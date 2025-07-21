@@ -24,10 +24,10 @@ test.describe("Stats Section", () => {
     // Check for stats cards
     const statsCards = page.locator(".bg-white.rounded-xl.p-8.shadow-lg");
     const cardCount = await statsCards.count();
-    
+
     // Verify we have at least one stats card
     expect(cardCount).toBeGreaterThan(0);
-    
+
     if (cardCount > 0) {
       await expect(statsCards.first()).toBeVisible();
     }
@@ -35,7 +35,7 @@ test.describe("Stats Section", () => {
     // Check for "Years of Experience" stat (more flexible)
     const experienceText = page.locator("text=Years of Experience");
     const experienceExists = await experienceText.count();
-    
+
     if (experienceExists > 0) {
       await expect(experienceText.first()).toBeVisible();
     }
@@ -43,7 +43,7 @@ test.describe("Stats Section", () => {
     // Check that numerical values are displayed (be more flexible with color classes)
     const statNumbers = page.locator(".text-4xl.font-bold");
     const numberCount = await statNumbers.count();
-    
+
     if (numberCount > 0) {
       await expect(statNumbers.first()).toBeVisible();
       // More flexible check - just verify there's some content
