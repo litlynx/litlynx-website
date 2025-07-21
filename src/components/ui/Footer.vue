@@ -66,13 +66,12 @@ function trackContactEmailClick() {
               </li>
             </ul>
           </div>
-          <span @click="trackContactEmailClick">{{ contactInfo.email }}</span>
           <div class="flex flex-col lg:flex-row mt-[66px] mb-[51px]">
             <div
               class="flex text-center lg:text-start flex-col lg:flex-row gap-5 items-center justify-center lg:justify-start"
             >
               <h3 class="text-center md:text-left text-2xl text-cyan-400">Contact us</h3>
-              <span onclick="">{{ contactInfo.email }}</span>
+              <span @click="trackContactEmailClick">{{ contactInfo.email }}</span>
             </div>
           </div>
         </div>
