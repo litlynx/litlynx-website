@@ -6,7 +6,11 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:e2e:headed": "playwright test --headed",
+    "test:e2e:debug": "playwright test --debug"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
@@ -21,5 +25,8 @@
     "tailwindcss": "^3.4.3",
     "typescript": "^5.4.5",
     "vue": "^3.5.16"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0"
   }
 }

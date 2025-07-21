@@ -1,6 +1,9 @@
 ---
 import Section from "./Section.astro";
 import { Image } from "astro:assets";
+import Linkedin from "../../assets/linkedin.svg";
+import Github from "../../assets/github.svg";
+import XoloHire from "../../assets/xolo-hire.svg";
 ---
 
 <Section id="home">
@@ -16,12 +19,17 @@ import { Image } from "astro:assets";
           launch, grow, or transform? Let’s build something brilliant together.
         </p>
         <div class="w-full justify-center md:justify-start items-center inline-flex">
-          <!-- <a
-            href="https://github.com/litlynx"
-            target="_blank"
-            class="px-8 py-5 bg-zinc-900 hover:bg-white rounded-2xl text-center text-white hover:text-black border text-xl font-normal leading-7"
-            >Book a consultation
-          </a> -->
+          <div class="flex gap-5 justify-center md:justify-start mb-6">
+          <a href="https://linkedin.com/in/jorge-miranda-dev" target="_blank" class="hover:opacity-80 transition-opacity">
+            <img src={Linkedin.src} alt="Linkedin" class="w-[25px] h-[25px] m-1.5 filter brightness-0" />
+          </a>
+          <a href="https://github.com/litlynx" target="_blank" class="hover:opacity-80 transition-opacity">
+            <img src={Github.src} alt="Github" class="w-[35px] h-[35px]" />
+          </a>
+          <a href="https://app.xolo.io/profile/jorgemiranda" target="_blank" class="hover:opacity-80 transition-opacity">
+            <img src={XoloHire.src} alt="Xolo Hire" class="w-[25px] h-[25px] m-1.5 filter brightness-0" />
+          </a>
+        </div>
         </div>
       </div>
     </div>
