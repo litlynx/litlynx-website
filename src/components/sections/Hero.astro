@@ -26,6 +26,7 @@ import XoloHire from "../../assets/xolo-hire.svg";
               rel="noopener noreferrer"
               class="hover:opacity-80 transition-opacity"
               aria-label="Connect with us on LinkedIn"
+              onclick="mixpanel.track('LinkedIn Clicked')"
             >
               <img src={Linkedin.src} alt="LinkedIn" class="w-[25px] h-[25px] m-1.5 filter brightness-0" width="25" height="25" />
             </a>
@@ -35,6 +36,7 @@ import XoloHire from "../../assets/xolo-hire.svg";
               rel="noopener noreferrer"
               class="hover:opacity-80 transition-opacity"
               aria-label="View our projects on GitHub"
+              onclick="mixpanel.track('GitHub Clicked')"
             >
               <img src={Github.src} alt="GitHub" class="w-[35px] h-[35px]" width="35" height="35" />
             </a>
@@ -44,6 +46,7 @@ import XoloHire from "../../assets/xolo-hire.svg";
               rel="noopener noreferrer"
               class="hover:opacity-80 transition-opacity"
               aria-label="Hire us through Xolo"
+              onclick="mixpanel.track('Xolo Hire Clicked')"
             >
               <img src={XoloHire.src} alt="Xolo Hire" class="w-[25px] h-[25px] m-1.5 filter brightness-0" width="25" height="25" />
             </a>
