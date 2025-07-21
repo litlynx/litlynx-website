@@ -3,7 +3,9 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Header -->
       <div class="text-center mb-16">
-        <h2 class="text-3xl font-bold text-gray-900 sm:text-4xl mb-4">By the Numbers</h2>
+        <h2 class="text-3xl font-bold text-gray-900 sm:text-4xl mb-4">
+          By the Numbers
+        </h2>
         <p class="text-lg text-gray-600 max-w-2xl mx-auto">
           A track record of delivering excellence in software development
         </p>
@@ -16,8 +18,15 @@
           <div
             class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
           >
-            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div
+              class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="w-8 h-8 text-blue-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -26,8 +35,12 @@
                 ></path>
               </svg>
             </div>
-            <div class="text-4xl font-bold text-blue-600 mb-2">{{ yearsOfExperience }}+</div>
-            <div class="text-gray-800 font-semibold text-lg mb-1">Years of Experience</div>
+            <div class="text-4xl font-bold text-blue-600 mb-2">
+              {{ yearsOfExperience }}+
+            </div>
+            <div class="text-gray-800 font-semibold text-lg mb-1">
+              Years of Experience
+            </div>
             <div class="text-sm text-gray-500">in Software Development</div>
           </div>
         </div>
@@ -37,8 +50,15 @@
           <div
             class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
           >
-            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div
+              class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="w-8 h-8 text-green-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -47,8 +67,12 @@
                 ></path>
               </svg>
             </div>
-            <div class="text-4xl font-bold text-green-600 mb-2">{{ companiesCount }}+</div>
-            <div class="text-gray-800 font-semibold text-lg mb-1">Companies</div>
+            <div class="text-4xl font-bold text-green-600 mb-2">
+              {{ companiesCount }}+
+            </div>
+            <div class="text-gray-800 font-semibold text-lg mb-1">
+              Companies
+            </div>
             <div class="text-sm text-gray-500">Trusted Partners</div>
           </div>
         </div>
@@ -58,8 +82,15 @@
           <div
             class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
           >
-            <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div
+              class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="w-8 h-8 text-purple-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -68,8 +99,12 @@
                 ></path>
               </svg>
             </div>
-            <div class="text-4xl font-bold text-purple-600 mb-2">{{ techStackCount }}+</div>
-            <div class="text-gray-800 font-semibold text-lg mb-1">Technologies</div>
+            <div class="text-4xl font-bold text-purple-600 mb-2">
+              {{ techStackCount }}+
+            </div>
+            <div class="text-gray-800 font-semibold text-lg mb-1">
+              Technologies
+            </div>
             <div class="text-sm text-gray-500">Mastered & Applied</div>
           </div>
         </div>
@@ -79,8 +114,15 @@
           <div
             class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
           >
-            <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div
+              class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="w-8 h-8 text-orange-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -89,7 +131,9 @@
                 ></path>
               </svg>
             </div>
-            <div class="text-4xl font-bold text-orange-600 mb-2">{{ projectsCount }}+</div>
+            <div class="text-4xl font-bold text-orange-600 mb-2">
+              {{ projectsCount }}+
+            </div>
             <div class="text-gray-800 font-semibold text-lg mb-1">Projects</div>
             <div class="text-sm text-gray-500">Successfully Delivered</div>
           </div>
@@ -99,8 +143,12 @@
       <!-- Key Technologies -->
       <div class="mb-20">
         <div class="text-center mb-12">
-          <h3 class="text-2xl font-bold text-gray-900 mb-4">Core Technologies</h3>
-          <p class="text-lg text-gray-600 max-w-2xl mx-auto">Expert-level proficiency in modern development stack</p>
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">
+            Core Technologies
+          </h3>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+            Expert-level proficiency in modern development stack
+          </p>
         </div>
         <div class="flex flex-wrap justify-center gap-4">
           <div
@@ -112,7 +160,9 @@
               <div v-html="tech.icon" class="flex-shrink-0"></div>
               <div class="flex flex-col">
                 <span class="text-gray-800 font-semibold">{{ tech.name }}</span>
-                <span v-if="tech.level" class="text-xs text-gray-500">{{ tech.level }}</span>
+                <span v-if="tech.level" class="text-xs text-gray-500">{{
+                  tech.level
+                }}</span>
               </div>
             </div>
           </div>
@@ -122,8 +172,12 @@
       <!-- Recent Companies -->
       <div>
         <div class="text-center mb-12">
-          <h3 class="text-2xl font-bold text-gray-900 mb-4">Recent Collaborations</h3>
-          <p class="text-lg text-gray-600 max-w-2xl mx-auto">Trusted partnerships with innovative companies</p>
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">
+            Recent Collaborations
+          </h3>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+            Trusted partnerships with innovative companies
+          </p>
         </div>
         <div class="relative">
           <!-- Timeline line -->
@@ -131,8 +185,14 @@
             class="absolute top-16 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-indigo-300 to-transparent hidden md:block"
           ></div>
 
-          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 relative">
-            <div v-for="(company, index) in recentCompanies" :key="company.name" class="relative">
+          <div
+            class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 relative"
+          >
+            <div
+              v-for="(company, index) in recentCompanies"
+              :key="company.name"
+              class="relative"
+            >
               <!-- Timeline dot -->
               <div
                 class="absolute -top-1.5 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-indigo-500 rounded-full border-3 border-white shadow-lg z-10 hidden md:block"
@@ -141,7 +201,11 @@
               <div
                 class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col justify-between items-center h-32 relative z-0 hover:-translate-y-1 border border-gray-100"
               >
-                <div class="font-bold text-gray-800 text-sm text-center leading-tight">{{ company.name }}</div>
+                <div
+                  class="font-bold text-gray-800 text-sm text-center leading-tight"
+                >
+                  {{ company.name }}
+                </div>
                 <div class="flex flex-col items-center mt-auto">
                   <div class="text-xs text-gray-400">{{ company.year }}</div>
                 </div>
@@ -172,7 +236,9 @@ const companiesCount = computed(() => {
 
 // Count technologies with meaningful data
 const techStackCount = computed(() => {
-  return resumeData.skills.filter((skill) => skill.name && (skill.level || skill.keywords.length > 0)).length;
+  return resumeData.skills.filter(
+    (skill) => skill.name && (skill.level || skill.keywords.length > 0)
+  ).length;
 });
 
 // Estimate projects based on work experience

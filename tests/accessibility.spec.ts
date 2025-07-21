@@ -33,7 +33,9 @@ test.describe("Accessibility & SEO", () => {
     await expect(xoloImg).toHaveAttribute("alt", "Xolo Hire");
   });
 
-  test("should have proper link attributes for external links", async ({ page }) => {
+  test("should have proper link attributes for external links", async ({
+    page,
+  }) => {
     // Check external links have target="_blank"
     const externalLinks = page.locator('a[target="_blank"]');
 
@@ -56,7 +58,10 @@ test.describe("Accessibility & SEO", () => {
 
     // Check meta description
     const metaDescription = page.locator('meta[name="description"]');
-    await expect(metaDescription).toHaveAttribute("content", /Litlynx is your trusted partner/);
+    await expect(metaDescription).toHaveAttribute(
+      "content",
+      /Litlynx is your trusted partner/
+    );
 
     // Check viewport meta tag
     const viewportMeta = page.locator('meta[name="viewport"]');
@@ -111,14 +116,18 @@ test.describe("Accessibility & SEO", () => {
         }
       }
     } catch (error) {
-      console.log("Warning: Keyboard navigation test encountered issues, continuing...");
+      console.log(
+        "Warning: Keyboard navigation test encountered issues, continuing..."
+      );
     }
   });
 
   test("should have good color contrast", async ({ page }) => {
     // This is a basic check - in a real scenario you'd use axe-core or similar
     const heading = page.locator("h1");
-    const headingColor = await heading.evaluate((el) => getComputedStyle(el).color);
+    const headingColor = await heading.evaluate(
+      (el) => getComputedStyle(el).color
+    );
 
     // Basic check that text is not transparent or white-on-white
     expect(headingColor).not.toBe("rgba(0, 0, 0, 0)");

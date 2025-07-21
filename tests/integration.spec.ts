@@ -27,7 +27,11 @@ test.describe("Integration Tests", () => {
   });
 
   test("should work across all device sizes", async ({ page }) => {
-    const viewports = [VIEWPORT_SIZES.mobile, VIEWPORT_SIZES.tablet, VIEWPORT_SIZES.desktop];
+    const viewports = [
+      VIEWPORT_SIZES.mobile,
+      VIEWPORT_SIZES.tablet,
+      VIEWPORT_SIZES.desktop,
+    ];
 
     await helpers.testResponsiveLayout(viewports);
   });

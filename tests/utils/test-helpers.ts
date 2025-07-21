@@ -27,7 +27,9 @@ export class TestHelpers {
    * Check if a section is visible on the page
    */
   async expectSectionToBeVisible(sectionText: string) {
-    const section = this.page.locator("section").filter({ hasText: sectionText });
+    const section = this.page
+      .locator("section")
+      .filter({ hasText: sectionText });
 
     try {
       await expect(section).toBeVisible({ timeout: 10000 });
@@ -64,7 +66,9 @@ export class TestHelpers {
     for (const viewport of viewports) {
       await this.page.setViewportSize(viewport);
       await expect(this.page.locator("h1")).toBeVisible();
-      await expect(this.page.locator('img[alt="Hero Ilustration"]')).toBeVisible();
+      await expect(
+        this.page.locator('img[alt="Hero Ilustration"]')
+      ).toBeVisible();
     }
   }
 
@@ -122,7 +126,9 @@ export class TestHelpers {
         await card.hover();
         await this.page.waitForTimeout(100); // Small delay for hover animation
       } catch (error) {
-        console.log(`Warning: Could not interact with card ${i + 1}, continuing...`);
+        console.log(
+          `Warning: Could not interact with card ${i + 1}, continuing...`
+        );
       }
     }
   }

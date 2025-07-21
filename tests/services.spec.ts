@@ -5,21 +5,29 @@ test.describe("Services Section", () => {
     await page.goto("/");
   });
 
-  test("should display services section with correct content", async ({ page }) => {
+  test("should display services section with correct content", async ({
+    page,
+  }) => {
     // Check services section is visible
-    const servicesSection = page.locator("section").filter({ hasText: "Our Services" });
+    const servicesSection = page
+      .locator("section")
+      .filter({ hasText: "Our Services" });
     await expect(servicesSection).toBeVisible();
 
     // Check services heading
     await expect(page.locator("h2")).toContainText("Our Services");
 
     // Check services description
-    await expect(page.locator("p")).toContainText("We specialize in crafting exceptional digital experiences");
+    await expect(page.locator("p")).toContainText(
+      "We specialize in crafting exceptional digital experiences"
+    );
   });
 
   test("should display all service cards", async ({ page }) => {
     // Wait for services section to load
-    await page.waitForSelector('h2:has-text("Our Services")', { timeout: 10000 });
+    await page.waitForSelector('h2:has-text("Our Services")', {
+      timeout: 10000,
+    });
 
     // Check for Frontend Development service
     const frontendCard = page.locator("text=Frontend Development").first();
@@ -46,7 +54,9 @@ test.describe("Services Section", () => {
   });
 
   test("should have interactive service cards", async ({ page }) => {
-    await page.waitForSelector('h2:has-text("Our Services")', { timeout: 10000 });
+    await page.waitForSelector('h2:has-text("Our Services")', {
+      timeout: 10000,
+    });
 
     // Get all service cards
     const serviceCards = page.locator(".bg-white.rounded-xl.p-6");

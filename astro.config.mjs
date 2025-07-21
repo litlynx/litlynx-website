@@ -9,21 +9,21 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
   site: "https://www.litlynx.com",
   integrations: [
-    tailwind(), 
-    vue(), 
+    tailwind(),
+    vue(),
     sitemap({
-      changefreq: 'weekly',
+      changefreq: "weekly",
       priority: 0.7,
       lastmod: new Date(),
       entryLimit: 10000,
       // You can add custom sitemap entries here
       customPages: [
-        'https://www.litlynx.com/',
-        'https://www.litlynx.com/services/',
-        'https://www.litlynx.com/about/',
-        'https://www.litlynx.com/contact/'
-      ]
-    })
+        "https://www.litlynx.com/",
+        "https://www.litlynx.com/services/",
+        "https://www.litlynx.com/about/",
+        "https://www.litlynx.com/contact/",
+      ],
+    }),
   ],
   output: "static",
   build: {

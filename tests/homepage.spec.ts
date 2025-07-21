@@ -36,7 +36,9 @@ test.describe("Homepage", () => {
 
     // Check hero description
     const description = page.locator("p").first();
-    await expect(description).toContainText("Litlynx is your trusted partner for modern frontend web development");
+    await expect(description).toContainText(
+      "Litlynx is your trusted partner for modern frontend web development"
+    );
 
     // Check hero image is loaded
     const heroImage = page.locator('img[alt="Hero Ilustration"]');
@@ -46,7 +48,9 @@ test.describe("Homepage", () => {
 
   test("should have working social media links", async ({ page }) => {
     // LinkedIn link
-    const linkedinLink = page.locator('a[href*="linkedin.com/in/jorge-miranda-dev"]');
+    const linkedinLink = page.locator(
+      'a[href*="linkedin.com/in/jorge-miranda-dev"]'
+    );
     await expect(linkedinLink).toBeVisible();
     await expect(linkedinLink).toHaveAttribute("target", "_blank");
 
@@ -56,20 +60,28 @@ test.describe("Homepage", () => {
     await expect(githubLink).toHaveAttribute("target", "_blank");
 
     // Xolo link
-    const xoloLink = page.locator('a[href*="app.xolo.io/profile/jorgemiranda"]');
+    const xoloLink = page.locator(
+      'a[href*="app.xolo.io/profile/jorgemiranda"]'
+    );
     await expect(xoloLink).toBeVisible();
     await expect(xoloLink).toHaveAttribute("target", "_blank");
   });
 
-  test("should have working social media link interactions", async ({ page }) => {
+  test("should have working social media link interactions", async ({
+    page,
+  }) => {
     // Test hover effects on social links
-    const linkedinLink = page.locator('a[href*="linkedin.com/in/jorge-miranda-dev"]');
+    const linkedinLink = page.locator(
+      'a[href*="linkedin.com/in/jorge-miranda-dev"]'
+    );
     await linkedinLink.hover();
 
     const githubLink = page.locator('a[href*="github.com/litlynx"]');
     await githubLink.hover();
 
-    const xoloLink = page.locator('a[href*="app.xolo.io/profile/jorgemiranda"]');
+    const xoloLink = page.locator(
+      'a[href*="app.xolo.io/profile/jorgemiranda"]'
+    );
     await xoloLink.hover();
 
     // All links should still be visible after hover

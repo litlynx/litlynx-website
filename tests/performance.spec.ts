@@ -23,7 +23,9 @@ test.describe("Performance", () => {
     await expect(page.locator('img[alt="Hero Ilustration"]')).toBeVisible();
   });
 
-  test("should have responsive images that load efficiently", async ({ page }) => {
+  test("should have responsive images that load efficiently", async ({
+    page,
+  }) => {
     await page.goto("/");
 
     // Check that hero image loads
@@ -36,7 +38,10 @@ test.describe("Performance", () => {
     expect(imageSrc).toContain("unsplash");
   });
 
-  test("should handle network conditions gracefully", async ({ page, context }) => {
+  test("should handle network conditions gracefully", async ({
+    page,
+    context,
+  }) => {
     // Simulate slow 3G network
     await context.route("**/*", async (route) => {
       await new Promise((resolve) => setTimeout(resolve, 100)); // Add 100ms delay
@@ -50,7 +55,9 @@ test.describe("Performance", () => {
     await expect(page.locator("p").first()).toBeVisible({ timeout: 10000 });
   });
 
-  test("should have proper caching headers for static assets", async ({ page }) => {
+  test("should have proper caching headers for static assets", async ({
+    page,
+  }) => {
     const responses: any[] = [];
 
     page.on("response", (response) => {
@@ -65,7 +72,9 @@ test.describe("Performance", () => {
     // Find CSS/JS responses and check they exist
     const staticAssets = responses.filter((response) => {
       const url = response.url();
-      return url.includes(".css") || url.includes(".js") || url.includes(".svg");
+      return (
+        url.includes(".css") || url.includes(".js") || url.includes(".svg")
+      );
     });
 
     // We should have some static assets

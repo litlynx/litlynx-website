@@ -5,21 +5,29 @@ test.describe("Stats Section", () => {
     await page.goto("/");
   });
 
-  test("should display stats section with correct content", async ({ page }) => {
+  test("should display stats section with correct content", async ({
+    page,
+  }) => {
     // Check stats section is visible
-    const statsSection = page.locator("section").filter({ hasText: "By the Numbers" });
+    const statsSection = page
+      .locator("section")
+      .filter({ hasText: "By the Numbers" });
     await expect(statsSection).toBeVisible();
 
     // Check stats heading
     await expect(page.locator("h2")).toContainText("By the Numbers");
 
     // Check stats description
-    await expect(page.locator("p")).toContainText("A track record of delivering excellence");
+    await expect(page.locator("p")).toContainText(
+      "A track record of delivering excellence"
+    );
   });
 
   test("should display stats cards with numbers", async ({ page }) => {
     // Wait for stats section to load
-    await page.waitForSelector('h2:has-text("By the Numbers")', { timeout: 10000 });
+    await page.waitForSelector('h2:has-text("By the Numbers")', {
+      timeout: 10000,
+    });
 
     // Check for stats cards
     const statsCards = page.locator(".bg-white.rounded-xl.p-8.shadow-lg");
@@ -52,7 +60,9 @@ test.describe("Stats Section", () => {
     }
   });
 
-  test("should have interactive stats cards with hover effects", async ({ page }) => {
+  test("should have interactive stats cards with hover effects", async ({
+    page,
+  }) => {
     await page.waitForSelector('h2:has-text("By the Numbers")');
 
     // Get all stats cards
@@ -76,7 +86,9 @@ test.describe("Stats Section", () => {
     await expect(page.locator("text=Years of Experience")).toBeVisible();
 
     // Check for other potential stats (these might vary based on your actual implementation)
-    const statsGrid = page.locator(".grid.grid-cols-1.md\\:grid-cols-2.lg\\:grid-cols-4");
+    const statsGrid = page.locator(
+      ".grid.grid-cols-1.md\\:grid-cols-2.lg\\:grid-cols-4"
+    );
     await expect(statsGrid).toBeVisible();
   });
 });

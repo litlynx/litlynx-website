@@ -9,13 +9,13 @@
 export function generateTitle(pageTitle, includeBrand = true) {
   const brandName = "Litlynx";
   const suffix = "Modern Frontend Web Development";
-  
+
   if (!includeBrand) return pageTitle;
-  
+
   if (pageTitle === brandName) {
     return `${brandName} - ${suffix}`;
   }
-  
+
   return `${pageTitle} | ${brandName}`;
 }
 
@@ -27,11 +27,11 @@ export function generateTitle(pageTitle, includeBrand = true) {
  */
 export function generateDescription(description, maxLength = 160) {
   if (description.length <= maxLength) return description;
-  
+
   const truncated = description.substring(0, maxLength - 3);
-  const lastSpace = truncated.lastIndexOf(' ');
-  
-  return truncated.substring(0, lastSpace) + '...';
+  const lastSpace = truncated.lastIndexOf(" ");
+
+  return truncated.substring(0, lastSpace) + "...";
 }
 
 /**
@@ -42,18 +42,18 @@ export function generateDescription(description, maxLength = 160) {
  */
 export function generateKeywords(pageKeywords = [], globalKeywords = []) {
   const defaultKeywords = [
-    'frontend development',
-    'web development',
-    'React development',
-    'Vue.js development',
-    'Astro development',
-    'JavaScript development',
-    'TypeScript development',
-    'responsive design',
-    'performance optimization',
-    'modern web applications'
+    "frontend development",
+    "web development",
+    "React development",
+    "Vue.js development",
+    "Astro development",
+    "JavaScript development",
+    "TypeScript development",
+    "responsive design",
+    "performance optimization",
+    "modern web applications",
   ];
-  
+
   return [...new Set([...pageKeywords, ...globalKeywords, ...defaultKeywords])];
 }
 
@@ -64,19 +64,23 @@ export function generateKeywords(pageKeywords = [], globalKeywords = []) {
  */
 export function generateBreadcrumbsLD(breadcrumbs) {
   const itemListElement = breadcrumbs.map((crumb, index) => ({
-    '@type': 'ListItem',
+    "@type": "ListItem",
     position: index + 1,
     name: crumb.name,
-    item: crumb.url
+    item: crumb.url,
   }));
 
   const schema = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement,
   };
 
-  return `<script type="application/ld+json">${JSON.stringify(schema, null, 2)}</script>`;
+  return `<script type="application/ld+json">${JSON.stringify(
+    schema,
+    null,
+    2
+  )}</script>`;
 }
 
 /**
@@ -85,22 +89,26 @@ export function generateBreadcrumbsLD(breadcrumbs) {
  * @returns {string} - JSON-LD script tag
  */
 export function generateFAQLD(faqs) {
-  const mainEntity = faqs.map(faq => ({
-    '@type': 'Question',
+  const mainEntity = faqs.map((faq) => ({
+    "@type": "Question",
     name: faq.question,
     acceptedAnswer: {
-      '@type': 'Answer',
-      text: faq.answer
-    }
+      "@type": "Answer",
+      text: faq.answer,
+    },
   }));
 
   const schema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity,
   };
 
-  return `<script type="application/ld+json">${JSON.stringify(schema, null, 2)}</script>`;
+  return `<script type="application/ld+json">${JSON.stringify(
+    schema,
+    null,
+    2
+  )}</script>`;
 }
 
 /**
@@ -109,10 +117,13 @@ export function generateFAQLD(faqs) {
  * @param {string} baseUrl - Site base URL
  * @returns {string} - Absolute image URL
  */
-export function generateOGImageURL(imagePath, baseUrl = 'https://www.litlynx.com') {
-  if (imagePath.startsWith('http')) return imagePath;
-  
-  const cleanPath = imagePath.startsWith('/') ? imagePath : `/${imagePath}`;
+export function generateOGImageURL(
+  imagePath,
+  baseUrl = "https://www.litlynx.com"
+) {
+  if (imagePath.startsWith("http")) return imagePath;
+
+  const cleanPath = imagePath.startsWith("/") ? imagePath : `/${imagePath}`;
   return `${baseUrl}${cleanPath}`;
 }
 
@@ -122,11 +133,12 @@ export function generateOGImageURL(imagePath, baseUrl = 'https://www.litlynx.com
  * @param {string} baseUrl - Site base URL
  * @returns {string} - Canonical URL
  */
-export function generateCanonicalURL(url, baseUrl = 'https://www.litlynx.com') {
+export function generateCanonicalURL(url, baseUrl = "https://www.litlynx.com") {
   try {
     const urlObj = new URL(url, baseUrl);
     // Remove trailing slash except for root
-    const pathname = urlObj.pathname === '/' ? '/' : urlObj.pathname.replace(/\/$/, '');
+    const pathname =
+      urlObj.pathname === "/" ? "/" : urlObj.pathname.replace(/\/$/, "");
     return `${urlObj.protocol}//${urlObj.host}${pathname}`;
   } catch {
     return baseUrl;
@@ -135,13 +147,14 @@ export function generateCanonicalURL(url, baseUrl = 'https://www.litlynx.com') {
 
 // Common SEO constants
 export const SEO_CONSTANTS = {
-  SITE_NAME: 'Litlynx',
-  DEFAULT_TITLE_SUFFIX: 'Modern Frontend Web Development',
-  DEFAULT_DESCRIPTION: 'Transform your business with cutting-edge frontend development. Litlynx delivers modern, fast, and scalable web applications using React, Vue, Astro, and the latest technologies.',
-  DEFAULT_IMAGE: '/litlynx-og-image.jpg',
-  DEFAULT_LOCALE: 'en_US',
-  TWITTER_HANDLE: '@litlynx',
+  SITE_NAME: "Litlynx",
+  DEFAULT_TITLE_SUFFIX: "Modern Frontend Web Development",
+  DEFAULT_DESCRIPTION:
+    "Transform your business with cutting-edge frontend development. Litlynx delivers modern, fast, and scalable web applications using React, Vue, Astro, and the latest technologies.",
+  DEFAULT_IMAGE: "/litlynx-og-image.jpg",
+  DEFAULT_LOCALE: "en_US",
+  TWITTER_HANDLE: "@litlynx",
   MAX_TITLE_LENGTH: 60,
   MAX_DESCRIPTION_LENGTH: 160,
-  THEME_COLOR: '#1e40af'
+  THEME_COLOR: "#1e40af",
 };
