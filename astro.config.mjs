@@ -9,6 +9,7 @@ import mixpanel from "astrojs-mixpanel";
 // https://astro.build/config
 export default defineConfig({
   site: "https://www.litlynx.com",
+
   integrations: [
     tailwind(),
     vue(),
@@ -18,12 +19,7 @@ export default defineConfig({
       lastmod: new Date(),
       entryLimit: 10000,
       // You can add custom sitemap entries here
-      customPages: [
-        "https://www.litlynx.com/",
-        "https://www.litlynx.com/services/",
-        "https://www.litlynx.com/about/",
-        "https://www.litlynx.com/contact/",
-      ],
+      customPages: ["https://www.litlynx.com/"],
     }),
     mixpanel({
       token: "1e6f55002711b864d0c412b8509f7726",
@@ -43,16 +39,21 @@ export default defineConfig({
       },
     }),
   ],
+
   output: "static",
+
   build: {
     format: "directory",
   },
+
   image: {
     service: {
       entrypoint: "astro/assets/services/sharp",
     },
   },
+
   // Enhanced SEO and performance
   compressHTML: true,
+
   scopedStyleStrategy: "class",
 });

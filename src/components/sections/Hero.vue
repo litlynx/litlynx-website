@@ -40,7 +40,7 @@
             rel="noopener noreferrer"
             aria-label="Connect with us on LinkedIn"
           >
-            <img src="/src/assets/linkedin.svg" alt="LinkedIn" class="icon" />
+            <img :src="linkedinSrc" alt="LinkedIn" class="icon" />
           </a>
           <a
             href="https://github.com/litlynx"
@@ -48,7 +48,7 @@
             rel="noopener noreferrer"
             aria-label="View our projects on GitHub"
           >
-            <img src="/src/assets/github.svg" alt="GitHub" class="icon large" />
+            <img :src="githubSrc" alt="GitHub" class="icon large" />
           </a>
           <a
             href="https://app.xolo.io/profile/jorgemiranda"
@@ -56,7 +56,7 @@
             rel="noopener noreferrer"
             aria-label="Hire us through Xolo"
           >
-            <img src="/src/assets/xolo-hire.svg" alt="Xolo Hire" class="icon" />
+            <img :src="hireProfileSrc" alt="Xolo Hire" class="icon" />
           </a>
         </nav>
       </div>
@@ -67,6 +67,17 @@
 <script setup lang="ts">
 import Beams from "../vue-bits/Beams/Beams.vue";
 import BlurText from "../vue-bits/BlurText/BlurText.vue";
+
+const props = defineProps({
+  linkedinSrc: String,
+  githubSrc: String,
+  hireProfileSrc: String,
+});
+
+const LogoSrc = props.logoSrc;
+const linkedinSrc = props.linkedinSrc;
+const githubSrc = props.githubSrc;
+const hireProfileSrc = props.hireProfileSrc;
 
 const blurText = "Front-End Development for your company";
 
@@ -141,8 +152,8 @@ const handleAnimationComplete = () => {
   opacity: 0.85;
 }
 .icon.large {
-  width: 38px;
-  height: 38px;
+  width: 30px;
+  height: 30px;
   filter: none;
 }
 .icon:hover {
