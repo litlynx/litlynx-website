@@ -1,6 +1,6 @@
 # LitLynx Website
 
-[![Astro](https://img.shields.io/badge/Astro-3.0-blue?logo=astro)](https://astro.build/) [![Vue](https://img.shields.io/badge/Vue-3.x-42b883?logo=vue.js)](https://vuejs.org/) [![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.x-38bdf8?logo=tailwindcss)](https://tailwindcss.com/)[![License](https://img.shields.io/badge/license-MIT-green)](./LICENSE)[![pnpm](https://img.shields.io/badge/pnpm-%E2%9C%85-orange?logo=pnpm)](https://pnpm.io/)
+[![Astro](https://img.shields.io/badge/Astro-3.0-blue?logo=astro)](https://astro.build/) [![Vue](https://img.shields.io/badge/Vue-3.x-42b883?logo=vue.js)](https://vuejs.org/) [![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.x-38bdf8?logo=tailwindcss)](https://tailwindcss.com/) [![License](https://img.shields.io/badge/license-MIT-green)](./LICENSE) [![pnpm](https://img.shields.io/badge/pnpm-%E2%9C%85-orange?logo=pnpm)](https://pnpm.io/)
 
 This is the official website for LitLynx, built with [Astro](https://astro.build/), [Vue](https://vuejs.org/guide/introduction.html), and [Tailwind CSS](https://tailwindcss.com/).
 
