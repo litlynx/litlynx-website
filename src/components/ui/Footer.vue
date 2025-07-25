@@ -5,13 +5,13 @@ const props = defineProps({
   logoSrc: String,
   linkedinSrc: String,
   githubSrc: String,
-  xoloHireSrc: String,
+  hireProfileSrc: String,
 });
 
 const LogoSrc = props.logoSrc;
 const linkedinSrc = props.linkedinSrc;
 const githubSrc = props.githubSrc;
-const xoloHireSrc = props.xoloHireSrc;
+const hireProfileSrc = props.hireProfileSrc;
 
 const socialLogos = computed(() => [
   {
@@ -21,8 +21,8 @@ const socialLogos = computed(() => [
   },
   { name: "Github", src: githubSrc, link: "https://github.com/litlynx" },
   {
-    name: "Xolo Hire",
-    src: xoloHireSrc,
+    name: "Hire Profile",
+    src: hireProfileSrc,
     link: "https://app.xolo.io/profile/jorgemiranda",
   },
 ]);
@@ -43,12 +43,12 @@ function trackContactEmailClick() {
 <template>
   <section class="px-5 pt-8">
     <div class="w-full max-w-[600px] mx-auto">
-      <div class="px-[15px] bg-dark text-gray py-[55px] lg:px-[60px] sm:rounded-t-[15px]">
+      <div class="px-[15px] bg-neutral-900 text-gray-300 py-[55px] lg:px-[60px] sm:rounded-t-[15px]">
         <div>
           <div class="flex flex-col lg:flex-row gap-7 items-center justify-between">
             <picture class="w-auto h-[50px] relative justify-start">
               <a href="/">
-                <img :src="LogoSrc" alt="Logo for Litlynx Brand" class="w-full h-full object-contain" />
+                <img :src="LogoSrc" alt="Logo for Brand" class="w-full h-full object-contain" />
               </a>
             </picture>
             <ul class="flex gap-5">

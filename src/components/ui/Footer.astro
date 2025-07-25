@@ -6,10 +6,12 @@ import Github from "../../assets/github.svg";
 import XoloHire from "../../assets/xolo-hire.svg";
 ---
 
-<FooterVue
-  client:load
-  logoSrc={Logo.src}
-  linkedinSrc={Linkedin.src}
-  githubSrc={Github.src}
-  xoloHireSrc={XoloHire.src}
-/>
+<div class="w-full bg-black text-neutral-100 px-4">
+  <FooterVue
+    client:load
+    logoSrc={Logo.src}
+    linkedinSrc={Linkedin.src}
+    githubSrc={Github.src}
+    hireProfileSrc={XoloHire.src}
+  />
+</div>

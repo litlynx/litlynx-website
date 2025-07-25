@@ -1,11 +1,12 @@
 ---
-import MainLayout from '../layouts/MainLayout.astro';
-import Hero from '../components/sections/Hero.astro';
+import MainLayout from "../layouts/MainLayout.astro";
+import Hero from "../components/sections/Hero.astro";
+import HeroVue from "../components/sections/Hero.vue";
 // import Contact from '../components/sections/Contact.astro';
-import Footer from '../components/ui/Footer.astro';
-import Stats from '../components/sections/Stats.vue';
-import Services from '../components/sections/Services.astro';
-import siteData from '../data/site-data.json';
+import Footer from "../components/ui/Footer.astro";
+import Stats from "../components/sections/Stats.vue";
+import Services from "../components/sections/Services.astro";
+import siteData from "../data/site-data.json";
 
 // SEO optimized metadata from site-data.json
 const seoTitle = siteData.title;
@@ -14,15 +15,10 @@ const seoKeywords = siteData.keywords;
 const seoImage = siteData.image;
 ---
 
-<MainLayout
-  title={seoTitle}
-  description={seoDescription}
-  keywords={seoKeywords}
-  type="website"
-  image={seoImage}
->
-	<Hero />
-  <Stats />
+<MainLayout title={seoTitle} description={seoDescription} keywords={seoKeywords} type="website" image={seoImage}>
+  <!-- <Hero /> -->
+  <HeroVue client:load />
+  <Stats client:load />
   <Services />
-  <Footer />
+  <Footer client:load />
 </MainLayout>

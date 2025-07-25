@@ -1,118 +1,132 @@
 <template>
-  <section class="py-16 bg-gradient-to-br from-indigo-50 to-blue-100" ref="sectionRef">
+  <section class="py-16 bg-gradient-to-br from-neutral-900 via-neutral-950 to-neutral-800" ref="sectionRef">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Header -->
       <div class="text-center mb-16">
-        <h2 class="text-3xl font-bold text-gray-900 sm:text-4xl mb-4">By the Numbers</h2>
-        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        <h2 class="text-3xl font-bold text-white sm:text-4xl mb-4">By the Numbers</h2>
+        <p class="text-lg text-white max-w-2xl mx-auto">
           A track record of delivering excellence in software development
         </p>
       </div>
 
       <!-- Stats Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
         <!-- Years of Experience -->
-        <div class="text-center">
-          <div
-            class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-          >
-            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                ></path>
-              </svg>
+        <SpotlightCard
+          class-name="custom-spotlight-card bg-neutral-900 border-none"
+          spotlight-color="rgba(255, 255, 255, 0.25)"
+        >
+          <div class="text-center">
+            <div class="rounded-xl p-8 transition-all duration-300 hover:-translate-y-1">
+              <div class="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="text-4xl font-bold text-blue-400 mb-2">{{ yearsOfExperience }}+</div>
+              <div class="text-white font-semibold text-lg mb-1">Years of Experience</div>
+              <div class="text-sm text-[#e3e3e3]">in Software Development</div>
             </div>
-            <div class="text-4xl font-bold text-blue-600 mb-2">{{ yearsOfExperience }}+</div>
-            <div class="text-gray-800 font-semibold text-lg mb-1">Years of Experience</div>
-            <div class="text-sm text-gray-500">in Software Development</div>
           </div>
-        </div>
+        </SpotlightCard>
 
         <!-- Companies Worked With -->
-        <div class="text-center">
-          <div
-            class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-          >
-            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
-                ></path>
-              </svg>
+
+        <SpotlightCard
+          class-name="custom-spotlight-card bg-neutral-900 border-none"
+          spotlight-color="rgba(255, 255, 255, 0.25)"
+        >
+          <div class="text-center">
+            <div class="rounded-xl p-8 transition-all duration-300 hover:-translate-y-1">
+              <div class="w-16 h-16 bg-green-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                  ></path>
+                </svg>
+              </div>
+              <div class="text-4xl font-bold text-green-400 mb-2">{{ companiesCount }}+</div>
+              <div class="text-white font-semibold text-lg mb-1">Companies Collaborated With</div>
+              <div class="text-sm text-[#e3e3e3]">Valued Partnerships & Clients</div>
             </div>
-            <div class="text-4xl font-bold text-green-600 mb-2">{{ companiesCount }}+</div>
-            <div class="text-gray-800 font-semibold text-lg mb-1">Companies</div>
-            <div class="text-sm text-gray-500">Trusted Partners</div>
           </div>
-        </div>
+        </SpotlightCard>
 
         <!-- Tech Stack -->
-        <div class="text-center">
-          <div
-            class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-          >
-            <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-                ></path>
-              </svg>
+
+        <SpotlightCard
+          class-name="custom-spotlight-card bg-neutral-900 border-none"
+          spotlight-color="rgba(255, 255, 255, 0.25)"
+        >
+          <div class="text-center">
+            <div class="rounded-xl p-8 transition-all duration-300 hover:-translate-y-1">
+              <div class="w-16 h-16 bg-purple-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                  ></path>
+                </svg>
+              </div>
+              <div class="text-4xl font-bold text-purple-400 mb-2">{{ techStackCount }}+</div>
+              <div class="text-white font-semibold text-lg mb-1">Technologies</div>
+              <div class="text-sm text-[#e3e3e3]">Mastered & Applied</div>
             </div>
-            <div class="text-4xl font-bold text-purple-600 mb-2">{{ techStackCount }}+</div>
-            <div class="text-gray-800 font-semibold text-lg mb-1">Technologies</div>
-            <div class="text-sm text-gray-500">Mastered & Applied</div>
           </div>
-        </div>
+        </SpotlightCard>
 
         <!-- Projects Delivered -->
-        <div class="text-center">
-          <div
-            class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-          >
-            <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-                ></path>
-              </svg>
+        <SpotlightCard
+          class-name="custom-spotlight-card bg-neutral-900 border-none"
+          spotlight-color="rgba(255, 255, 255, 0.25)"
+        >
+          <div class="text-center">
+            <div class="rounded-xl p-8 transition-all duration-300 hover:-translate-y-1">
+              <div class="w-16 h-16 bg-orange-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="text-4xl font-bold text-orange-400 mb-2">{{ projectsCount }}+</div>
+              <div class="text-white font-semibold text-lg mb-1">Projects</div>
+              <div class="text-sm text-[#e3e3e3]">Successfully Delivered</div>
             </div>
-            <div class="text-4xl font-bold text-orange-600 mb-2">{{ projectsCount }}+</div>
-            <div class="text-gray-800 font-semibold text-lg mb-1">Projects</div>
-            <div class="text-sm text-gray-500">Successfully Delivered</div>
           </div>
-        </div>
+        </SpotlightCard>
       </div>
 
       <!-- Key Technologies -->
       <div class="mb-20">
         <div class="text-center mb-12">
-          <h3 class="text-2xl font-bold text-gray-900 mb-4">Core Technologies</h3>
-          <p class="text-lg text-gray-600 max-w-2xl mx-auto">Expert-level proficiency in modern development stack</p>
+          <h3 class="text-2xl font-bold text-white mb-4">Core Technologies</h3>
+          <p class="text-lg text-gray-300 max-w-2xl mx-auto">Expert-level proficiency in modern development stack</p>
         </div>
         <div class="flex flex-wrap justify-center gap-4">
           <div
             v-for="tech in keyTechnologies"
             :key="tech.name"
-            class="bg-white px-6 py-4 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 border border-gray-200 hover:-translate-y-1"
+            class="bg-gray-800 px-6 py-4 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
           >
             <div class="flex items-center gap-3">
               <div v-html="tech.icon" class="flex-shrink-0"></div>
               <div class="flex flex-col">
-                <span class="text-gray-800 font-semibold">{{ tech.name }}</span>
-                <span v-if="tech.level" class="text-xs text-gray-500">{{ tech.level }}</span>
+                <span class="text-gray-100 font-semibold">{{ tech.name }}</span>
+                <span v-if="tech.level" class="text-xs text-gray-400">{{ tech.level }}</span>
               </div>
             </div>
           </div>
@@ -122,26 +136,26 @@
       <!-- Recent Companies -->
       <div>
         <div class="text-center mb-12">
-          <h3 class="text-2xl font-bold text-gray-900 mb-4">Recent Collaborations</h3>
-          <p class="text-lg text-gray-600 max-w-2xl mx-auto">Trusted partnerships with innovative companies</p>
+          <h3 class="text-2xl font-bold text-white mb-4">Recent Collaborations</h3>
+          <p class="text-lg text-gray-300 max-w-2xl mx-auto">Trusted partnerships with innovative companies</p>
         </div>
         <div class="relative">
           <!-- Timeline line -->
           <div
-            class="absolute top-16 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-indigo-300 to-transparent hidden md:block"
+            class="absolute top-16 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-indigo-700 to-transparent hidden md:block"
           ></div>
 
           <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 relative">
             <div v-for="(company, index) in recentCompanies" :key="company.name" class="relative">
               <!-- Timeline dot -->
               <div
-                class="absolute -top-1.5 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-indigo-500 rounded-full border-3 border-white shadow-lg z-10 hidden md:block"
+                class="absolute -top-1.5 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-indigo-500 rounded-full border-3 border-gray-900 shadow-lg z-10 hidden md:block"
               ></div>
 
               <div
-                class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col justify-between items-center h-32 relative z-0 hover:-translate-y-1 border border-gray-100"
+                class="bg-neutral-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col justify-between items-center h-32 relative z-0 hover:-translate-y-1 border border-gray-700"
               >
-                <div class="font-bold text-gray-800 text-sm text-center leading-tight">
+                <div class="font-bold text-gray-100 text-sm text-center leading-tight">
                   {{ company.name }}
                 </div>
                 <div class="flex flex-col items-center mt-auto">
@@ -160,6 +174,7 @@
 import { computed, ref, onMounted, onBeforeUnmount } from "vue";
 import resumeData from "../../data/resume.json";
 import { mixpanel } from "astrojs-mixpanel/client";
+import SpotlightCard from "../vue-bits/SpotlightCard/SpotlightCard.vue";
 
 // Intersection Observer for Mixpanel event
 const sectionRef = ref<HTMLElement | null>(null);
@@ -214,7 +229,7 @@ const techStackCount = computed(() => {
 // Estimate projects based on work experience
 const projectsCount = computed(() => {
   // Rough estimate: 2-3 major projects per company role
-  return resumeData.work.length * 2.5;
+  return resumeData.work.length * 2;
 });
 
 // Key technologies (those with levels or keywords)
