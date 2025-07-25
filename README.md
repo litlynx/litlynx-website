@@ -1,6 +1,21 @@
 # LitLynx Website
 
-This is the official website for LitLynx, built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/).
+[![Astro](https://img.shields.io/badge/Astro-3.0-blue?logo=astro)](https://astro.build/) [![Vue](https://img.shields.io/badge/Vue-3.x-42b883?logo=vue.js)](https://vuejs.org/) [![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.x-38bdf8?logo=tailwindcss)](https://tailwindcss.com/)[![License](https://img.shields.io/badge/license-MIT-green)](./LICENSE)[![pnpm](https://img.shields.io/badge/pnpm-%E2%9C%85-orange?logo=pnpm)](https://pnpm.io/)
+
+This is the official website for LitLynx, built with [Astro](https://astro.build/), [Vue](https://vuejs.org/guide/introduction.html), and [Tailwind CSS](https://tailwindcss.com/).
+
+![LitLynx Website Screenshot](screenshot.png)
+
+## ✨ Features
+
+- **Astro + Vue Integration**: Use Vue components seamlessly within Astro pages.
+- **ScrollStack Animated Stats**: Interactive stats section powered by a custom ScrollStack Vue component.
+- **Dark Theme**: Consistent dark mode styling using Tailwind's neutral color palette.
+- **Optimized Image Handling**: Astro image imports passed as props to Vue components for best performance.
+- **Responsive Design**: Mobile-first layouts and adaptive grids.
+- **Services Section**: Modern cards with neutral colors for all service offerings.
+- **SEO Metadata**: Dynamic metadata from JSON for better search engine visibility.
+- **Easy Customization**: Modular structure for fast updates and new features.
 
 ## 🚀 Project Structure
 
@@ -21,7 +36,7 @@ This is the official website for LitLynx, built with [Astro](https://astro.build
 └── README.md
 ```
 
-## 🧑‍� Getting Started
+## 🧑‍💻 Getting Started
 
 Install dependencies:
 
@@ -47,25 +62,6 @@ Preview the production build:
 pnpm preview
 ```
 
-## 📦 Scripts
-
-| Command        | Description                |
-| -------------- | -------------------------- |
-| `pnpm install` | Install dependencies       |
-| `pnpm dev`     | Start local dev server     |
-| `pnpm build`   | Build your production site |
-| `pnpm preview` | Preview your build locally |
-| `pnpm astro`   | Run Astro CLI commands     |
-
-## 🌐 Learn More
-
-- [Astro Documentation](https://docs.astro.build)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-
----
-
-© 2025 LitLynx. All rights reserved.
-
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
@@ -79,6 +75,12 @@ All commands are run from the root of the project, from a terminal:
 | `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `pnpm astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
+## 🌐 Learn More
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- [Astro Documentation](https://docs.astro.build)
+- [Vue Documentation](https://vuejs.org/guide/introduction.html)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+
+---
+
+© 2025 LitLynx. All rights reserved.
