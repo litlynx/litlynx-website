@@ -228,11 +228,7 @@
     {
       "name": "Next.js",
       "level": "Intermediate",
-      "keywords": [
-        "React Framework",
-        "Server-side Rendering",
-        "Static Generation"
-      ]
+      "keywords": ["React Framework", "Server-side Rendering", "Static Generation"]
     },
     {
       "name": "React.js",
@@ -362,22 +358,12 @@
     {
       "name": "TypeScript",
       "level": "Advanced",
-      "keywords": [
-        "Type Safety",
-        "Interface Design",
-        "Generic Programming",
-        "Modern JavaScript"
-      ]
+      "keywords": ["Type Safety", "Interface Design", "Generic Programming", "Modern JavaScript"]
     },
     {
       "name": "Node.js",
       "level": "Advanced",
-      "keywords": [
-        "Backend Development",
-        "API Development",
-        "NPM",
-        "Express.js"
-      ]
+      "keywords": ["Backend Development", "API Development", "NPM", "Express.js"]
     },
     {
       "name": "HTML5",
@@ -397,32 +383,17 @@
     {
       "name": "Front-end Development",
       "level": "Expert",
-      "keywords": [
-        "Responsive Design",
-        "User Experience",
-        "Performance Optimization",
-        "Accessibility"
-      ]
+      "keywords": ["Responsive Design", "User Experience", "Performance Optimization", "Accessibility"]
     },
     {
       "name": "Vue.js",
       "level": "Expert",
-      "keywords": [
-        "Frontend Framework",
-        "Single Page Applications",
-        "Component-based Architecture",
-        "State Management"
-      ]
+      "keywords": ["Frontend Framework", "Single Page Applications", "Component-based Architecture", "State Management"]
     },
     {
       "name": "JavaScript",
       "level": "Expert",
-      "keywords": [
-        "ES6+",
-        "Async Programming",
-        "DOM Manipulation",
-        "Functional Programming"
-      ]
+      "keywords": ["ES6+", "Async Programming", "DOM Manipulation", "Functional Programming"]
     },
     {
       "name": "UX / UI Design",

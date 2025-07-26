@@ -1,0 +1,280 @@
+skills:
+  - name: Amazon Web Services (AWS)
+    level: ""
+    type: back-end
+    keywords: ["AWS", "Cloud Computing", "EC2", "S3", "Lambda", "Serverless Architecture"]
+  - name: Google Search Console
+    level: ""
+    type: front-end
+    keywords: ["SEO", "Webmaster Tools", "Indexing", "Performance Reports", "Crawling"]
+  - name: salesforce
+    level: ""
+    type: back-end
+    keywords: ["CRM", "Cloud Computing", "Sales Management", "Automation", "Leads"]
+  - name: Next.js
+    level: "intermediate"
+    type: fullstack
+    keywords: ["React Framework", "Server-side Rendering", "Static Generation", "API Routes", "ISR"]
+  - name: React.js
+    level: Advanced
+    type: front-end
+    keywords: ["Hooks", "Component Lifecycle", "State Management", "JSX", "Virtual DOM", "Context API"]
+  - name: vitest
+    level: ""
+    type: testing
+    keywords: ["Testing", "JavaScript", "Unit Tests", "Integration Tests", "Mocking", "Snapshot Testing"]
+  - name: Sonarcube
+    level: ""
+    type: testing
+    keywords: ["Code Quality", "Static Analysis", "Security", "Bugs", "Code Smells"]
+  - name: Gitlab
+    level: ""
+    type: fullstack
+    keywords: ["CI/CD", "Version Control", "Pipelines", "Merge Requests", "DevOps"]
+  - name: Amazon Style Dictionary
+    level: ""
+    type: design
+    keywords: ["Design Tokens", "Theming", "Style Management", "Automation"]
+  - name: Google Analytics
+    level: ""
+    type: front-end
+    keywords: ["Web Analytics", "Traffic Analysis", "Events", "Goals", "Reporting"]
+  - name: Google Tag Manager
+    level: ""
+    type: front-end
+    keywords: ["Tag Management", "Tracking", "Events", "Containers", "Data Layer"]
+  - name: Yarn
+    level: ""
+    type: fullstack
+    keywords: ["Package Manager", "Dependencies", "Workspaces", "Scripts"]
+  - name: BigCommerce
+    level: ""
+    type: fullstack
+    keywords: ["E-commerce", "SaaS", "APIs", "Storefront", "Checkout"]
+  - name: StencilJS
+    level: ""
+    type: front-end
+    keywords: ["Web Components", "Compiler", "TypeScript", "Reusable Components"]
+  - name: Figma
+    level: ""
+    type: design
+    keywords: ["Design", "Prototyping", "Collaboration", "UI/UX", "Components"]
+  - name: YAML
+    level: ""
+    type: back-end
+    keywords: ["Data Serialization", "Configuration", "Human-readable", "Frontmatter"]
+  - name: Software as a Service (SaaS)
+    level: ""
+    type: fullstack
+    keywords: ["Cloud", "Subscription", "Multi-tenant", "Web Apps"]
+  - name: vite
+    level: ""
+    type: front-end
+    keywords: ["Build Tool", "Hot Module Replacement", "Fast Refresh", "ESM"]
+  - name: Webpack
+    level: ""
+    type: front-end
+    keywords: ["Module Bundler", "Loaders", "Plugins", "Code Splitting"]
+  - name: GraphQL
+    level: ""
+    type: fullstack
+    keywords: ["API", "Query Language", "Schema", "Resolvers", "Mutations"]
+  - name: Software Development
+    level: ""
+    type: fullstack
+    keywords: ["Programming", "Engineering", "SDLC", "Best Practices"]
+  - name: GitHub
+    level: ""
+    type: fullstack
+    keywords: ["Version Control", "Repositories", "Pull Requests", "Actions"]
+  - name: PlaywrightJs
+    level: ""
+    type: testing
+    keywords: ["Testing", "Automation", "Browser", "E2E", "Headless"]
+  - name: Mixpanel
+    level: ""
+    type: front-end
+    keywords: ["Analytics", "Event Tracking", "Funnels", "Cohorts"]
+  - name: Analytics
+    level: ""
+    type: front-end
+    keywords: ["Data Analysis", "Metrics", "Reporting", "Dashboards"]
+  - name: Tailwind CSS
+    level: ""
+    type: front-end
+    keywords: ["Utility-first", "CSS Framework", "Responsive Design", "Customizable"]
+  - name: Nuxt.js
+    level: Advanced
+    type: fullstack
+    keywords: ["SSR", "SSG", "Vue.js Framework", "Universal Applications", "Modules"]
+  - name: Jest
+    level: ""
+    type: testing
+    keywords: ["Testing", "JavaScript", "Unit Tests", "Mocking", "Snapshots"]
+  - name: Cypress
+    level: ""
+    type: testing
+    keywords: ["Testing", "E2E", "Automation", "Browser"]
+  - name: TypeScript
+    level: Advanced
+    type: fullstack
+    keywords: ["Type Safety", "Interface Design", "Generic Programming", "Modern JavaScript", "Static Typing"]
+  - name: Node.js
+    level: Advanced
+    type: back-end
+    keywords: ["Backend Development", "API Development", "NPM", "Express.js", "Event Loop"]
+  - name: HTML5
+    level: ""
+    type: front-end
+    keywords: ["Markup", "Web", "Semantic Elements", "Canvas", "Audio/Video"]
+  - name: Cascading Style Sheets (CSS)
+    level: ""
+    type: front-end
+    keywords: ["Styling", "Selectors", "Responsive Design", "Flexbox", "Grid"]
+  - name: windi css
+    level: ""
+    type: front-end
+    keywords: ["Utility-first", "CSS Framework", "Performance", "On-demand"]
+  - name: Front-end Development
+    level: Expert
+    type: front-end
+    keywords: ["Responsive Design", "User Experience", "Performance Optimization", "Accessibility", "UI"]
+  - name: Vue.js
+    level: Expert
+    type: front-end
+    keywords:
+      [
+        "Frontend Framework",
+        "Single Page Applications",
+        "Component-based Architecture",
+        "State Management",
+        "Reactivity",
+      ]
+  - name: JavaScript
+    level: Expert
+    type: fullstack
+    keywords: ["ES6+", "Async Programming", "DOM Manipulation", "Functional Programming", "Closures"]
+  - name: UX / UI Design
+    level: Advanced
+    type: design
+    keywords: ["User Research", "Prototyping", "Design Systems", "Figma", "Wireframes"]
+  - name: User Experience (UX)
+    level: ""
+    type: design
+    keywords: ["Usability", "User Research", "Interaction Design", "Personas"]
+  - name: User Interface Design
+    level: ""
+    type: design
+    keywords: ["UI", "Wireframes", "Mockups", "Visual Design"]
+  - name: Graphic Design
+    level: ""
+    type: design
+    keywords: ["Visual Communication", "Branding", "Typography", "Layout"]
+  - name: Branding
+    level: ""
+    type: design
+    keywords: ["Identity", "Logo", "Brand Guidelines", "Strategy"]
+  - name: Web Design
+    level: ""
+    type: design
+    keywords: ["UI/UX", "Responsive", "HTML", "CSS", "Layout"]
+  - name: Art Direction
+    level: ""
+    type: design
+    keywords: ["Creative Direction", "Visual Design", "Campaigns"]
+  - name: Typography
+    level: ""
+    type: design
+    keywords: ["Fonts", "Type Design", "Kerning", "Layout"]
+  - name: Music Composition
+    level: ""
+    type: design
+    keywords: ["Songwriting", "Arrangement", "Production", "Notation"]
+  - name: agile
+    level: ""
+    type: fullstack
+    keywords: ["Scrum", "Kanban", "Sprints", "Collaboration"]
+  - name: Affinity Designer
+    level: ""
+    type: design
+    keywords: ["Vector Design", "Illustration", "UI Design"]
+  - name: HTML5 + CSS3
+    level: ""
+    type: front-end
+    keywords: ["Markup", "Styling", "Responsive", "Web"]
+  - name: SASS
+    level: ""
+    type: front-end
+    keywords: ["CSS Preprocessor", "Variables", "Mixins", "Nesting"]
+  - name: LESS
+    level: ""
+    type: front-end
+    keywords: ["CSS Preprocessor", "Variables", "Mixins", "Functions"]
+  - name: jQuery
+    level: ""
+    type: front-end
+    keywords: ["DOM Manipulation", "AJAX", "Events", "Plugins"]
+  - name: Git
+    level: ""
+    type: fullstack
+    keywords: ["Version Control", "Branching", "Merging", "Commits"]
+  - name: node.js
+    level: ""
+    type: back-end
+    keywords: ["JavaScript Runtime", "Backend", "NPM", "Modules"]
+  - name: JSON
+    level: ""
+    type: fullstack
+    keywords: ["Data Format", "Serialization", "APIs", "JavaScript Object Notation"]
+  - name: REST API
+    level: ""
+    type: fullstack
+    keywords: ["Web Services", "HTTP", "Endpoints", "CRUD"]
+  - name: Adobe Photoshop
+    level: ""
+    type: design
+    keywords: ["Image Editing", "Retouching", "Layers", "Compositing"]
+  - name: Adobe Illustrator
+    level: ""
+    type: design
+    keywords: ["Vector Graphics", "Logo Design", "Illustration", "Typography"]
+  - name: Adobe InDesign
+    level: ""
+    type: design
+    keywords: ["Layout", "Publishing", "Print Design", "Typography"]
+  - name: Adobe AfterEffects
+    level: ""
+    type: design
+    keywords: ["Motion Graphics", "Animation", "Visual Effects", "Compositing"]
+  - name: Affinity Photo
+    level: ""
+    type: design
+    keywords: ["Photo Editing", "Retouching", "RAW Processing"]
+  - name: affinity publisher
+    level: ""
+    type: design
+    keywords: ["Publishing", "Layout", "Print Design"]
+  - name: Adobe Experience Manager (AEM)
+    level: ""
+    type: fullstack
+    keywords: ["CMS", "Web Content Management", "Digital Asset Management"]
+  - name: Teamwork
+    level: ""
+    type: fullstack
+    keywords: ["Project Management", "Collaboration", "Tasks", "Time Tracking"]
+  - name: AstroJS
+    level: "Intermediate"
+    type: front-end
+    keywords: ["Static Site Generator", "Islands Architecture", "JavaScript", "Performance", "Partial Hydration"]
+  - name: SvelteJS
+    level: "Intermediate"
+    type: front-end
+    keywords: ["Frontend Framework", "Reactive Programming", "Components", "JavaScript", "Compiler"]
+  - name: SvelteKitJS
+    level: "Intermediate"
+    type: fullstack
+    keywords: ["Svelte", "SSR", "SSG", "Routing", "Fullstack"]
+  - name: pnpm
+    level: ""
+    type: fullstack
+    keywords: ["Package Manager", "Monorepo", "Dependencies", "Performance", "Workspaces"]

@@ -1,0 +1,56 @@
+companies:
+  - name: SIROC
+    position: Software Engineer
+    startDate: 2025-01-01
+    endDate: 2025-03-01
+    summary: Developed innovative audio software solutions using cutting-edge React and TypeScript technologies
+  - name: epitome GmbH
+    position: Lead Front-End Engineer
+    startDate: 2024-06-01
+    endDate: 2024-12-01
+    summary: Led front-end development initiatives and architected enterprise-scale e-commerce solutions with focus on performance and scalability
+  - name: epitome GmbH
+    position: Front-End Engineer
+    startDate: 2023-09-01
+    endDate: 2024-06-01
+    summary: Developed enterprise e-commerce platform from ground up using modern React ecosystem and advanced design system implementation
+  - name: Human Navigator Groep
+    position: Front-End Engineer
+    startDate: 2023-06-01
+    endDate: 2023-08-01
+    summary: Enhanced HR SaaS platform functionality through strategic refactoring and modern Vue.js implementation
+  - name: Proxify
+    position: Front-End Developer
+    startDate: 2022-10-01
+    endDate: 2023-06-01
+    summary: Delivered front-end solutions for Technology-as-a-Service platform with focus on scalability and performance
+  - name: Zentered
+    position: Front-End Developer
+    startDate: 2021-12-01
+    endDate: 2022-06-01
+    summary: Developed comprehensive e-commerce back-office management systems with focus on operational efficiency
+  - name: Helloprint
+    position: Front-End / QA Developer
+    startDate: 2021-03-01
+    endDate: 2021-12-01
+    summary: Full-stack e-commerce development with focus on testing and quality assurance using modern frameworks
+  - name: Celfocus
+    position: Front-End Developer
+    startDate: 2020-10-01
+    endDate: 2021-03-01
+    summary: Delivered enterprise web solutions using Adobe Experience Manager and modern JavaScript frameworks in agile and waterfall environments
+  - name: Leroy Merlin
+    position: Front-End Engineer
+    startDate: 2018-12-01
+    endDate: 2020-10-01
+    summary: Developed enterprise store distribution platform using Vue.js ecosystem with focus on scalability and performance optimization
+  - name: FREELANCE MEDIA PRODUCTIONS
+    position: Graphic Designer
+    startDate: 2015-01-01
+    endDate: 2018-01-01
+    summary: Provided comprehensive graphic design and branding solutions for diverse clientele across multiple industries
+  - name: Jorge Esteves
+    position: Front-End Developer / Designer
+    startDate: 2011-01-01
+    endDate: 2022-01-01
+    summary: Provided full-stack web development and design services combining technical expertise with creative vision
