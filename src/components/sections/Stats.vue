@@ -28,9 +28,12 @@
                   ></path>
                 </svg>
               </div>
-              <div class="text-4xl font-bold text-blue-400 mb-2">{{ yearsOfExperience }}+</div>
+              <div class="text-4xl font-bold text-blue-400 mb-2">{{ resumeData?.enterpriseYearsOfExperience }}+</div>
               <div class="text-white font-semibold text-lg mb-1">Years of Experience</div>
-              <div class="text-sm text-[#e3e3e3]">in Software Development</div>
+              <div class="text-sm text-[#e3e3e3]">in Enterprise Software Development</div>
+              <div class="text-sm text-[#e3e3e3]">
+                Started freelancing in {{ new Date().getFullYear() - (resumeData?.totalYearsOfExperience || 0) }}
+              </div>
             </div>
           </div>
         </SpotlightCard>
@@ -171,10 +174,63 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref, onMounted, onBeforeUnmount } from "vue";
-import resumeData from "../../data/resume.json";
+import { computed, ref, onMounted, onBeforeUnmount, onBeforeMount } from "vue";
 import { mixpanel } from "astrojs-mixpanel/client";
 import SpotlightCard from "../vue-bits/SpotlightCard/SpotlightCard.vue";
+import resumeJSON from "../../data/resume.json";
+
+type Skill = {
+  name: string;
+  level?: string;
+  keywords: string[];
+};
+
+const resumeData = ref<{
+  resume: any;
+  companies: any[];
+  totalCompanies: number;
+  totalYearsOfExperience: number;
+  enterpriseYearsOfExperience: number;
+  skillsData: Skill[];
+  totalSkills: number;
+}>({
+  resume: {},
+  companies: [],
+  totalCompanies: 0,
+  totalYearsOfExperience: 0,
+  enterpriseYearsOfExperience: 0,
+  skillsData: [],
+  totalSkills: 0,
+});
+
+const fetchData = async () => {
+  const resumeResponse = await fetch("api/getResume.json");
+  const resumeJson = await resumeResponse.json();
+
+  const companiesResponse = await fetch("api/getCompanies.json");
+  const companiesData = await companiesResponse.json();
+
+  const yearsOfExperienceResponse = await fetch("api/getYearsOfExperience.json");
+  const yearsOfExperienceData = await yearsOfExperienceResponse.json();
+
+  const skillsResponse = await fetch("api/getSkills.json");
+  const skillsData = await skillsResponse.json();
+
+  return {
+    resume: resumeJson,
+    companies: companiesData.companies,
+    totalCompanies: companiesData.totalCompanies,
+    totalYearsOfExperience: yearsOfExperienceData.totalYearsOfExperience,
+    enterpriseYearsOfExperience: yearsOfExperienceData.enterpriseYearsOfExperience,
+    skillsData: skillsData.skills,
+    totalSkills: skillsData.totalSkills,
+  };
+};
+
+onBeforeMount(async () => {
+  resumeData.value = await fetchData();
+  console.log("Resume data loaded:", resumeData.value);
+});
 
 // Intersection Observer for Mixpanel event
 const sectionRef = ref<HTMLElement | null>(null);
@@ -184,7 +240,7 @@ function trackMixpanelStatsView() {
   mixpanel.track("Stats Section Viewed");
 }
 
-onMounted(() => {
+onMounted(async () => {
   observer = new window.IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -211,25 +267,23 @@ onBeforeUnmount(() => {
 
 // Calculate years of experience from the summary
 const yearsOfExperience = computed(() => {
-  const summary = resumeData.basics.summary;
-  const match = summary.match(/(\d+)\+?\s*years?/i);
-  return match ? parseInt(match[1]) : 10;
+  return resumeData.value.enterpriseYearsOfExperience || 0;
 });
 
 // Count unique companies
 const companiesCount = computed(() => {
-  return resumeData.work.length;
+  return resumeData.value.totalCompanies || 0;
 });
 
 // Count technologies with meaningful data
 const techStackCount = computed(() => {
-  return resumeData.skills.filter((skill) => skill.name && (skill.level || skill.keywords.length > 0)).length;
+  return resumeData.value.skillsData.filter((skill) => skill.level || skill.keywords.length > 0).length || 0;
 });
 
 // Estimate projects based on work experience
 const projectsCount = computed(() => {
   // Rough estimate: 2-3 major projects per company role
-  return resumeData.work.length * 2;
+  return companiesCount.value * 2; // Adjust multiplier as needed
 });
 
 // Key technologies (those with levels or keywords)
@@ -255,9 +309,9 @@ const keyTechnologies = computed(() => {
     "UX / UI Design": `<svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#F59E0B"/></svg>`,
   };
 
-  return resumeData.skills
+  return resumeData.value.skillsData
     .filter((skill) => skill.level && skill.level !== "")
-    .slice(0, 12) // Show top 12
+    .slice(0, 40) // Show top 12
     .map((skill) => ({
       name: skill.name,
       level: skill.level,
@@ -270,7 +324,7 @@ const keyTechnologies = computed(() => {
 // Recent companies (last 6), avoiding repeated company names
 const recentCompanies = computed(() => {
   const seen = new Set<string>();
-  const uniqueJobs = resumeData.work.filter((job) => {
+  const uniqueJobs = resumeJSON.work.filter((job) => {
     if (seen.has(job.company)) return false;
     seen.add(job.company);
     return true;
