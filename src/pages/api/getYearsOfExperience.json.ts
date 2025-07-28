@@ -21,7 +21,7 @@ export async function GET() {
     if (!Array.isArray(entry.data.companies)) return total;
     const enterpriseExperience = entry.data.companies.reduce((companyTotal, company) => {
       const startDate = new Date(company.startDate);
-      if (startDate.getFullYear() > GRADUATION_YEAR) {
+      if (startDate.getFullYear() >= GRADUATION_YEAR) {
         const endDate = company.endDate ? new Date(company.endDate) : new Date();
         const experience = endDate.getFullYear() - startDate.getFullYear();
         return companyTotal + experience;

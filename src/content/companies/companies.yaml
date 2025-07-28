@@ -1,49 +1,69 @@
 companies:
+  - name: IT Sector
+    description: "We help financial institutions to be ready for the future: All of our solutions are cloud-enabled, thus eliminating the need for on-the-premise infrastructure."
+    position: Senior Front-End Engineer
+    startDate: 2025-08-04
+    endDate: 2026-01-01
+    summary: Working with React and TypeScript to develop scalable and maintainable front-end solutions for banking enterprise applications
   - name: SIROC
-    position: Software Engineer
+    description: "SIROC is a global venture studio helping startups and corporates build scalable digital products. From MVPs to growth"
+    position: Senior Software Engineer
     startDate: 2025-01-01
     endDate: 2025-03-01
     summary: Developed innovative audio software solutions using cutting-edge React and TypeScript technologies
   - name: epitome GmbH
+    description: "Discover epitome, a high-tech company shaping the future of teeth cleaning."
     position: Lead Front-End Engineer
     startDate: 2024-06-01
     endDate: 2024-12-01
     summary: Led front-end development initiatives and architected enterprise-scale e-commerce solutions with focus on performance and scalability
   - name: epitome GmbH
-    position: Front-End Engineer
+    description: "Discover epitome, a high-tech company shaping the future of teeth cleaning."
+    position: Senior Front-End Engineer
     startDate: 2023-09-01
     endDate: 2024-06-01
     summary: Developed enterprise e-commerce platform from ground up using modern React ecosystem and advanced design system implementation
+  - name: Trustbit GmbH
+    description: "Trustbit - your partner for accurate digital solutions"
+    position: Senior Front-End Engineer
+    startDate: 2023-09-01
+    endDate: 2024-01-01
+    summary: Developed and maintained scalable front-end solutions for digital trust applications using React, Vue and TypeScript
   - name: Human Navigator Groep
     position: Front-End Engineer
     startDate: 2023-06-01
     endDate: 2023-08-01
-    summary: Enhanced HR SaaS platform functionality through strategic refactoring and modern Vue.js implementation
+    summary: Enhanced HR SaaS platform functionality through strategic refactoring and modern Vue.js implementation from version 2 to 3, improving performance and maintainability
   - name: Proxify
-    position: Front-End Developer
+    position: Senior Front-End Developer
     startDate: 2022-10-01
     endDate: 2023-06-01
-    summary: Delivered front-end solutions for Technology-as-a-Service platform with focus on scalability and performance
+    summary: Delivered front-end solutions for Talent-as-a-Service platform with focus on scalability and performance using modern frameworks such as Nuxt.js and Vue.js, proxify.io/careers
   - name: Zentered
-    position: Front-End Developer
+    position: Senior Front-End Developer
     startDate: 2021-12-01
     endDate: 2022-06-01
-    summary: Developed comprehensive e-commerce back-office management systems with focus on operational efficiency
+    summary: Developed comprehensive e-commerce and back-office management systems with focus on operational efficiency using modern frameworks such as Nuxt.js and Vue.js
   - name: Helloprint
-    position: Front-End / QA Developer
+    position: Mid Front-End / QA Developer
     startDate: 2021-03-01
     endDate: 2021-12-01
-    summary: Full-stack e-commerce development with focus on testing and quality assurance using modern frameworks
+    summary: Full-stack e-commerce development with focus on testing and quality assurance using modern frameworks such as Nuxt.js and Vue.js. Implemented automated testing strategies to ensure high-quality code delivery using Playwright
   - name: Celfocus
-    position: Front-End Developer
+    position: Mid Front-End Developer
     startDate: 2020-10-01
     endDate: 2021-03-01
-    summary: Delivered enterprise web solutions using Adobe Experience Manager and modern JavaScript frameworks in agile and waterfall environments
+    summary: Delivered enterprise web solutions using Adobe Experience Manager and VueJS, using modern JavaScript in agile and waterfall environments. Worked on Vodafone.pt, Yorn.pt and in-store projects.
   - name: Leroy Merlin
     position: Front-End Engineer
     startDate: 2018-12-01
     endDate: 2020-10-01
-    summary: Developed enterprise store distribution platform using Vue.js ecosystem with focus on scalability and performance optimization
+    summary: Developed enterprise store distribution platform using Vue.js ecosystem with focus on scalability and performance optimization. Maintained a mobile-webview application for in-warehouse operations. Helped new developers onboard with the codebase and best practices.
+  - name: Blue Infinity
+    position: Junior Front-End Developer
+    startDate: 2018-11-01
+    endDate: 2018-02-01
+    summary: Internship focused on front-end development using Sails.JS and Javascript. Developed internal tools for the company and assisted in the development of client projects. Gained experience in agile methodologies and team collaboration. Worked on pcdiga.com
   - name: FREELANCE MEDIA PRODUCTIONS
     position: Graphic Designer
     startDate: 2015-01-01
@@ -51,6 +71,6 @@ companies:
     summary: Provided comprehensive graphic design and branding solutions for diverse clientele across multiple industries
   - name: Jorge Esteves
     position: Front-End Developer / Designer
-    startDate: 2011-01-01
+    startDate: 2015-01-01
     endDate: 2022-01-01
     summary: Provided full-stack web development and design services combining technical expertise with creative vision
