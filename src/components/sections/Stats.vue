@@ -31,9 +31,6 @@
               <div class="text-4xl font-bold text-blue-400 mb-2">{{ resumeData?.enterpriseYearsOfExperience }}+</div>
               <div class="text-white font-semibold text-lg mb-1">Years of Experience</div>
               <div class="text-sm text-[#e3e3e3]">in Enterprise Software Development</div>
-              <div class="text-sm text-[#e3e3e3]">
-                Started freelancing in {{ new Date().getFullYear() - (resumeData?.totalYearsOfExperience || 0) }}
-              </div>
             </div>
           </div>
         </SpotlightCard>
@@ -57,7 +54,7 @@
                 </svg>
               </div>
               <div class="text-4xl font-bold text-green-400 mb-2">{{ companiesCount }}+</div>
-              <div class="text-white font-semibold text-lg mb-1">Companies Collaborated With</div>
+              <div class="text-white font-semibold text-lg mb-1">Companies Collaborated</div>
               <div class="text-sm text-[#e3e3e3]">Valued Partnerships & Clients</div>
             </div>
           </div>
@@ -177,7 +174,6 @@
 import { computed, ref, onMounted, onBeforeUnmount, onBeforeMount } from "vue";
 import { mixpanel } from "astrojs-mixpanel/client";
 import SpotlightCard from "../vue-bits/SpotlightCard/SpotlightCard.vue";
-import resumeJSON from "../../data/resume.json";
 
 type Skill = {
   name: string;
@@ -229,7 +225,6 @@ const fetchData = async () => {
 
 onBeforeMount(async () => {
   resumeData.value = await fetchData();
-  console.log("Resume data loaded:", resumeData.value);
 });
 
 // Intersection Observer for Mixpanel event
@@ -323,16 +318,18 @@ const keyTechnologies = computed(() => {
 
 // Recent companies (last 6), avoiding repeated company names
 const recentCompanies = computed(() => {
+  const companies = Array.isArray(resumeData.value.companies) ? resumeData.value.companies : [];
   const seen = new Set<string>();
-  const uniqueJobs = resumeJSON.work.filter((job) => {
-    if (seen.has(job.company)) return false;
-    seen.add(job.company);
+  const uniqueJobs = companies.filter((job: any) => {
+    if (!job || typeof job.name !== "string" || job.name.trim() === "") return false;
+    if (seen.has(job.name)) return false;
+    seen.add(job.name);
     return true;
   });
-  return uniqueJobs.slice(0, 6).map((job) => ({
-    name: job.company,
-    role: job.position.split(" ")[0], // First word of position
-    year: new Date(job.startDate).getFullYear().toString(),
+  return uniqueJobs.slice(0, 6).map((job: any) => ({
+    name: job.name,
+    role: job.position ? String(job.position).split(" ")[0] : "",
+    year: job.startDate ? new Date(job.startDate).getFullYear().toString() : "",
   }));
 });
 </script>

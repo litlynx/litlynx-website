@@ -36,6 +36,7 @@ const companiesCollection = defineCollection({
     companies: z.array(
       z.object({
         name: z.string(),
+        description: z.string().optional(),
         position: z.string(),
         startDate: z.date(),
         endDate: z.date(),

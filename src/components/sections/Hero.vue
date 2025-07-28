@@ -82,7 +82,7 @@ const hireProfileSrc = props.hireProfileSrc;
 const blurText = "Front-End Development for your company";
 
 const handleAnimationComplete = () => {
-  console.log("Animation complete");
+  // Handle the completion of the blur text animation
 };
 </script>
 
